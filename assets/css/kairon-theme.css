@@ -1562,6 +1562,15 @@ h6 {
   border-top: 1px solid var(--stroke);
 }
 
+.blueprint-heading-text {
+  font-size: clamp(1.8rem, 3.4vw, 2.9rem) !important;
+  line-height: 1.18 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
 .blueprint-timeline-wrapper {
   position: relative;
 }
@@ -3548,6 +3557,11 @@ h6 {
   }
 
   /* --- Page 6: Creation Blueprint --- */
+  .blueprint-heading-text {
+    font-size: clamp(1.45rem, 5.2vw, 2.1rem) !important;
+    line-height: 1.25 !important;
+  }
+
   .blueprint-timeline-card {
     padding: 1.5rem 1.25rem !important;
     border-radius: 20px !important;
