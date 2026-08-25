@@ -3428,32 +3428,27 @@ h6 {
   }
 
   .skills-3d-stage {
-    height: 360px !important;
+    height: 380px !important;
     max-width: 100vw !important;
-    overflow: hidden !important;
+    overflow: visible !important;
     perspective: 800px !important;
     margin: 0 auto !important;
+    touch-action: pan-y !important;
   }
 
   .skills-3d-orbit-ring {
-    transform-origin: 50% 50% -180px !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform-style: preserve-3d !important;
+    touch-action: pan-y !important;
   }
 
   .skills-3d-orbit-item {
     width: 125px !important;
     height: 170px !important;
+    touch-action: pan-y !important;
   }
-
-  .skills-3d-orbit-item:nth-child(1) { transform: rotateY(0deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(2) { transform: rotateY(36deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(3) { transform: rotateY(72deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(4) { transform: rotateY(108deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(5) { transform: rotateY(144deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(6) { transform: rotateY(180deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(7) { transform: rotateY(216deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(8) { transform: rotateY(252deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(9) { transform: rotateY(288deg) translateZ(180px) !important; }
-  .skills-3d-orbit-item:nth-child(10) { transform: rotateY(324deg) translateZ(180px) !important; }
 
   /* --- Page 4: 5 Chapters of Mastery --- */
   .chapter-bento-card {
@@ -3651,26 +3646,13 @@ h6 {
   }
 
   .skills-3d-stage {
-    height: 320px !important;
-  }
-
-  .skills-3d-orbit-ring {
-    transform-origin: 50% 50% -150px !important;
+    height: 340px !important;
+    touch-action: pan-y !important;
   }
 
   .skills-3d-orbit-item {
     width: 110px !important;
     height: 155px !important;
+    touch-action: pan-y !important;
   }
-
-  .skills-3d-orbit-item:nth-child(1) { transform: rotateY(0deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(2) { transform: rotateY(36deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(3) { transform: rotateY(72deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(4) { transform: rotateY(108deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(5) { transform: rotateY(144deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(6) { transform: rotateY(180deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(7) { transform: rotateY(216deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(8) { transform: rotateY(252deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(9) { transform: rotateY(288deg) translateZ(150px) !important; }
-  .skills-3d-orbit-item:nth-child(10) { transform: rotateY(324deg) translateZ(150px) !important; }
 }
