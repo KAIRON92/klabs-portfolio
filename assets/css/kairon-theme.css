@@ -3306,3 +3306,371 @@ h6 {
   transform: translateX(8px);
   text-shadow: 0 0 12px rgba(0, 230, 118, 0.4);
 }
+
+/* ==========================================================================
+   18. COMPREHENSIVE MOBILE & TABLET ULTRA-RESPONSIVE SYSTEM (K LABS 2026)
+   Implements flawless 1-to-1 visual parity across all mobile viewports
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  /* Global Viewport Guard */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  /* Section Spacing on Mobile */
+  .section-origin,
+  .section-philosophy,
+  .section-persona,
+  .section-chapters,
+  .section-vault,
+  .section-blueprint,
+  .section-initiate {
+    padding: 4.5rem 0 3.5rem !important;
+    overflow-x: hidden !important;
+  }
+
+  /* --- Page 1: Hero Section (Origin) --- */
+  .section-origin {
+    padding-top: 6.2rem !important;
+  }
+
+  .hero-grand-title {
+    font-size: clamp(3.2rem, 14vw, 5.8rem) !important;
+    line-height: 0.92 !important;
+    letter-spacing: -0.01em !important;
+    margin: 0.4rem auto 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .banner-three-man {
+    position: relative !important;
+    top: 0 !important;
+    bottom: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: -1.2rem auto 1.2rem !important;
+    max-width: 320px !important;
+    width: 80% !important;
+    text-align: center !important;
+  }
+
+  .banner-three-man img {
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 48vh !important;
+    margin: 0 auto !important;
+  }
+
+  .banner-three-man::before {
+    height: 80px !important;
+    bottom: 2% !important;
+    width: 90% !important;
+  }
+
+  /* Hero Bento Cards Stacking */
+  .section-origin .bento-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.2rem !important;
+    width: 100% !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .hero-col-left,
+  .hero-col-center,
+  .hero-col-right {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .hero-bento-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  .hero-bento-center {
+    margin-top: 0 !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .hero-bento-card h2,
+  .hero-bento-card h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.35 !important;
+  }
+
+  /* --- Page 2: Manifesto (Philosophy) --- */
+  .manifesto-statement {
+    font-size: clamp(1.45rem, 5.2vw, 2.2rem) !important;
+    line-height: 1.35 !important;
+    text-align: left !important;
+  }
+
+  .manifesto-lead {
+    font-size: 0.98rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* --- Page 3: Persona & 3D Skills Orbit --- */
+  .persona-content-wrap {
+    margin-bottom: 2rem !important;
+    text-align: center !important;
+  }
+
+  .persona-quote-box {
+    text-align: left !important;
+    padding: 1.25rem !important;
+  }
+
+  .skills-3d-stage {
+    height: 360px !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+    perspective: 800px !important;
+    margin: 0 auto !important;
+  }
+
+  .skills-3d-orbit-ring {
+    transform-origin: 50% 50% -180px !important;
+  }
+
+  .skills-3d-orbit-item {
+    width: 125px !important;
+    height: 170px !important;
+  }
+
+  .skills-3d-orbit-item:nth-child(1) { transform: rotateY(0deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(2) { transform: rotateY(36deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(3) { transform: rotateY(72deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(4) { transform: rotateY(108deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(5) { transform: rotateY(144deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(6) { transform: rotateY(180deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(7) { transform: rotateY(216deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(8) { transform: rotateY(252deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(9) { transform: rotateY(288deg) translateZ(180px) !important; }
+  .skills-3d-orbit-item:nth-child(10) { transform: rotateY(324deg) translateZ(180px) !important; }
+
+  /* --- Page 4: 5 Chapters of Mastery --- */
+  .chapter-bento-card {
+    padding: 1.5rem 1.25rem !important;
+    margin-bottom: 1.5rem !important;
+    border-radius: 20px !important;
+  }
+
+  .chapter-bento-card .bento-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+
+  .chapter-bento-card .bento-span-6 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .chapter-title {
+    font-size: 1.4rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .chapter-desc {
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .chapter-metrics-strip {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    gap: 0.75rem !important;
+    padding: 0.85rem !important;
+  }
+
+  .chapter-metric-val {
+    font-size: 1.15rem !important;
+  }
+
+  .chapter-metric-lbl {
+    font-size: 0.68rem !important;
+  }
+
+  .chapter-thumb-wrap {
+    border-radius: 14px !important;
+    max-height: 240px !important;
+    overflow: hidden !important;
+  }
+
+  /* --- Page 5: The Vault --- */
+  .section-vault .bento-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  .vault-card-item {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .case-study-card {
+    padding: 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  .case-study-card h4 {
+    font-size: 1.25rem !important;
+  }
+
+  .case-thumb {
+    height: 220px !important;
+    border-radius: 14px !important;
+  }
+
+  /* --- Page 6: Creation Blueprint --- */
+  .blueprint-timeline-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  .blueprint-grid-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+
+  .blueprint-step-card {
+    width: 100% !important;
+    padding: 1.5rem 1.25rem !important;
+  }
+
+  /* --- Page 7: Direct Commission & Terminal --- */
+  .initiate-terminal-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  .brief-chip-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  .brief-chip {
+    font-size: 0.8rem !important;
+    padding: 0.45rem 0.85rem !important;
+  }
+
+  .terminal-preview-box {
+    font-size: 0.8rem !important;
+    padding: 1rem !important;
+    overflow-x: auto !important;
+    word-break: break-word !important;
+  }
+
+  /* --- Page 8: Let's Talk (lets-talk.html) --- */
+  .lets-talk-form-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 20px !important;
+    margin: 1rem auto !important;
+    width: 100% !important;
+  }
+
+  .unified-contact-box {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0.75rem !important;
+    gap: 0.6rem !important;
+  }
+
+  .contact-channel-addon {
+    width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-bottom: 0.6rem !important;
+    justify-content: space-between !important;
+  }
+
+  .contact-channel-select {
+    width: auto !important;
+    font-size: 0.95rem !important;
+  }
+
+  .unified-contact-input {
+    padding-left: 0.5rem !important;
+    width: 100% !important;
+    font-size: 0.95rem !important;
+  }
+
+  .capability-chips-wrapper .row {
+    --bs-gutter-y: 0.6rem;
+  }
+
+  .capability-chip {
+    font-size: 0.82rem !important;
+    padding: 0.55rem 0.85rem !important;
+  }
+
+  /* --- Header / Navbar Responsive Polish --- */
+  .header-three {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .header-action-group {
+    gap: 0.4rem !important;
+  }
+
+  .header-contact-icon-btn {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 1rem !important;
+  }
+
+  .header-cta-pill {
+    padding: 0.4rem 0.85rem !important;
+    font-size: 0.76rem !important;
+    letter-spacing: 0.04em !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-grand-title {
+    font-size: clamp(2.8rem, 13vw, 4.5rem) !important;
+  }
+
+  .banner-three-man {
+    max-width: 270px !important;
+    width: 85% !important;
+  }
+
+  .banner-three-man img {
+    max-height: 42vh !important;
+  }
+
+  .skills-3d-stage {
+    height: 320px !important;
+  }
+
+  .skills-3d-orbit-ring {
+    transform-origin: 50% 50% -150px !important;
+  }
+
+  .skills-3d-orbit-item {
+    width: 110px !important;
+    height: 155px !important;
+  }
+
+  .skills-3d-orbit-item:nth-child(1) { transform: rotateY(0deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(2) { transform: rotateY(36deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(3) { transform: rotateY(72deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(4) { transform: rotateY(108deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(5) { transform: rotateY(144deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(6) { transform: rotateY(180deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(7) { transform: rotateY(216deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(8) { transform: rotateY(252deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(9) { transform: rotateY(288deg) translateZ(150px) !important; }
+  .skills-3d-orbit-item:nth-child(10) { transform: rotateY(324deg) translateZ(150px) !important; }
+}
