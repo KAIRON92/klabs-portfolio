@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description"
+    content="Let's Talk — Start a project with K LABS. 2D/3D Animation, VFX, Thumbnail Design & Web/App Engineering." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Let’s Talk // Project Inquiry — K LABS Studio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/global/logo/kairon-logo.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="assets/global/logo/favicon.png" type="image/png" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- K Labs Theme Override -->
+  <link rel="stylesheet" href="assets/css/kairon-theme.css?v=2.9" />
+</head>
+
+<body class="tw-magic-cursor lets-talk-body">
+  <!-- Magic Cursor -->
+  <div id="magic-cursor">
+    <div id="ball"></div>
+  </div>
+
+  <!-- Full-Page Background for Let's Talk Page -->
+  <div class="section-full-bg" style="position: fixed; inset: 0; z-index: -2;">
+    <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+      poster="assets/pages/lets-talk/images/lets-talk-bg.jpg" onerror="this.style.display='none'">
+      <source src="assets/pages/lets-talk/videos/lets-talk-bg.mp4" type="video/mp4"
+        onerror="this.parentElement.style.display='none'" />
+    </video>
+    <img class="section-full-bg-img" src="assets/pages/lets-talk/images/lets-talk-bg.jpg" alt="Background"
+      onerror="this.style.display='none'" />
+    <div class="section-full-bg-overlay"></div>
+  </div>
+
+  <!-- Gradient Mesh Atmospheric Lighting -->
+  <div class="bg-gradient-mesh">
+    <div class="mesh-blob-1"></div>
+    <div class="mesh-blob-2"></div>
+  </div>
+
+  <!-- Floating Ash Particles Canvas (Same as Page 1) -->
+  <canvas id="kairon-particles"></canvas>
+
+  <!-- ==================== Offcanvas Mobile Menu ==================== -->
+  <div class="tw-offcanvas-2-area p-relative">
+    <div class="tw-offcanvas-2-bg is-left left-box"></div>
+    <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+    <div class="tw-offcanvas-2-wrapper">
+      <div class="tw-offcanvas-2-left left-box">
+        <div class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center mb-4">
+          <div class="twoffcanvas__logo">
+            <a class="logo-1" href="index.html">
+              <img src="assets/global/logo/kairon-logo-white.svg" alt="K Labs Studio" style="height: 38px;" />
+            </a>
+          </div>
+          <div class="tw-offcanvas-2-close text-end">
+            <button class="tw-offcanvas-2-close-btn" aria-label="Close menu">
+              <span class="close-text text-white">CLOSE</span>
+              <span class="close-icon-spin ms-2">
+                <i class="ph-bold ph-x fs-4"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="tw-main-menu-mobile menu-hover-active">
+          <nav class="py-2">
+            <div class="offcanvas-content-grid mb-3">
+              <!-- Left Column: 7 Chapters Navigation with Subheadings -->
+              <div class="d-flex flex-column gap-1">
+                <a class="tw-offcanvas-nav-item" href="index.html#top">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">01</span>
+                    <span class="tw-offcanvas-nav-text">Origin &amp; Hero</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Spatial 3D &amp; Creative Direction</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="index.html#philosophy">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">02</span>
+                    <span class="tw-offcanvas-nav-text">Creative Manifesto</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Philosophy &amp; Kinetic Ethos</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="index.html#persona">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">03</span>
+                    <span class="tw-offcanvas-nav-text">About Director</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Shiva Sardar — 6+ Years Mastery</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="index.html#chapters">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">04</span>
+                    <span class="tw-offcanvas-nav-text">5 Chapters of Mastery</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Craftsmanship &amp; Core Disciplines</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="index.html#vault">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">05</span>
+                    <span class="tw-offcanvas-nav-text">The Vault (Works)</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Selected Commercial Archive</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="index.html#blueprint">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">06</span>
+                    <span class="tw-offcanvas-nav-text">Creation Blueprint</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">End-to-End Production Pipeline</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="index.html#initiate">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">07</span>
+                    <span class="tw-offcanvas-nav-text">Direct Commission</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Live Interactive Terminal</span>
+                </a>
+
+                <div class="pt-3" style="display: flex; justify-content: flex-start; align-items: center; width: 100%;">
+                  <a class="offcanvas-lets-talk-pill" href="lets-talk.html"
+                    style="display: inline-block !important; width: auto !important; max-width: fit-content !important; min-width: unset !important; text-align: center !important; padding: 12px 34px !important; padding-left: 34px !important; padding-right: 34px !important; box-sizing: border-box !important; border: 1.5px solid #00e676 !important; border-radius: 9999px !important; text-decoration: none !important;">
+                    <span
+                      style="display: inline-block !important; text-align: center !important; margin: 0 auto !important; padding: 0 !important; line-height: 1 !important; white-space: nowrap !important; font-family: 'Syne', sans-serif !important; font-size: 0.92rem !important; font-weight: 800 !important; letter-spacing: 0.06em !important;">LET'S
+                      TALK // PROJECT INQUIRY ➔</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column inside Left Drawer: Studio Capabilities & Ethos -->
+              <div class="offcanvas-disciplines-card d-none d-lg-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex align-items-center justify-content-between pb-3 mb-3"
+                    style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                    <span class="text-white fw-bold font-heading"
+                      style="font-size: 0.85rem; letter-spacing: 0.08em;">CREATIVE CAPABILITIES</span>
+                    <span class="badge rounded-pill"
+                      style="background: rgba(0, 230, 118, 0.15); color: #00e676; font-size: 0.7rem; border: 1px solid rgba(0, 230, 118, 0.4);">4
+                      DISCIPLINES</span>
+                  </div>
+
+                  <div class="d-flex flex-column gap-2 mb-3">
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-play-circle offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">2D/3D Kinetic Motion</div>
+                        <div class="offcanvas-discipline-desc">Dynamic brand films, title design &amp; physics-based
+                          animation.</div>
+                      </div>
+                    </div>
+
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-cube-transparent offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">Visual Effects &amp; CGI</div>
+                        <div class="offcanvas-discipline-desc">Procedural simulation, cinematic lighting &amp;
+                          compositing.</div>
+                      </div>
+                    </div>
+
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-trend-up offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">High-CTR Creative</div>
+                        <div class="offcanvas-discipline-desc">Performance-engineered visual hooks that drive real
+                          engagement.</div>
+                      </div>
+                    </div>
+
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-code offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">Interactive Systems</div>
+                        <div class="offcanvas-discipline-desc">WebGL shaders &amp; modern bespoke front-end experiences.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-2 rounded-3 mt-2"
+                  style="background: rgba(0, 0, 0, 0.25); border: 1px dashed rgba(255, 255, 255, 0.12);">
+                  <p class="mb-0 text-white-50" style="font-size: 0.74rem; font-style: italic; line-height: 1.4;">
+                    "Engineering visual gravity and cinematic motion for forward-thinking brands worldwide."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="tw-offcanvas-2-right right-box d-none d-md-block p-relative">
+        <div class="tw-offcanvas-2-close text-end">
+          <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-text-btn" aria-label="Close menu">
+            <span class="close-word font-heading">CLOSE</span>
+          </button>
+        </div>
+        <div class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100">
+          <div class="twoffcanvas__contact-info">
+            <div class="twoffcanvas__contact-title mb-4">
+              <h5 class="text-white font-heading">Studio Transmission</h5>
+              <p class="text-white-50" style="font-size: 0.9rem;">Engineering motion, visual effects, and digital
+                creative systems worldwide.</p>
+            </div>
+
+            <!-- Direct Inquiry Contacts with Animated Green Icons -->
+            <div class="d-flex flex-column gap-3 mb-4">
+              <a class="offcanvas-contact-link" href="mailto:shivasardar967@gmail.com">
+                <i class="ph-bold ph-envelope offcanvas-contact-icon"></i>
+                <span class="offcanvas-contact-text">shivasardar967@gmail.com</span>
+              </a>
+              <a class="offcanvas-contact-link" href="https://api.whatsapp.com/send/?phone=919679505092"
+                target="_blank">
+                <i class="ph-bold ph-whatsapp-logo offcanvas-contact-icon"></i>
+                <span class="offcanvas-contact-text">+91 96795 XXXXX (WhatsApp)</span>
+              </a>
+              <a class="offcanvas-contact-link" href="https://www.instagram.com/zee_god._/" target="_blank">
+                <i class="ph-bold ph-instagram-logo offcanvas-contact-icon"></i>
+                <span class="offcanvas-contact-text">@zee_god._ (Instagram Portfolio)</span>
+              </a>
+            </div>
+
+            <!-- Studio Intelligence & Production Specs -->
+            <div class="p-3 rounded-3"
+              style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.12);">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="text-white fw-bold font-heading" style="font-size: 0.8rem; letter-spacing: 0.06em;">STUDIO
+                  RADAR</span>
+                <span class="badge rounded-pill"
+                  style="background: rgba(0, 230, 118, 0.18); color: #00e676; border: 1px solid #00e676; font-size: 0.72rem;">●
+                  OPEN 2026</span>
+              </div>
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2"
+                style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.85);">
+                <li><strong class="text-white">Response Time:</strong> Within 2 hours</li>
+                <li><strong class="text-white">Disciplines:</strong> 2D/3D Motion, VFX, High-CTR &amp; Web</li>
+                <li><strong class="text-white">Base:</strong> Kolkata, India (Global Remote)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Header (Exact Match with Homepage: Logo Left, 3 Socials Center, Actions Right) ==================== -->
+  <header id="top" class="header header-three tw-transition-all tw-z-99 py-2 py-md-3">
+    <div class="header-fluid-container">
+      <nav class="d-flex align-items-center justify-content-between position-relative">
+        <!-- Far Left: K LABS Logo -->
+        <div class="header-three-logo">
+          <a href="index.html" class="d-inline-flex align-items-center">
+            <img src="assets/global/logo/kairon-logo.svg" alt="K LABS Logo" />
+          </a>
+        </div>
+
+        <!-- Center: 3 Social Icons (Instagram, WhatsApp, Gmail) in Navbar Center (Rounded Squares) -->
+        <div
+          class="header-social-center position-absolute start-50 translate-middle-x d-none d-md-flex align-items-center">
+          <a class="header-social-btn" href="https://www.instagram.com/zee_god._/" target="_blank" title="Instagram">
+            <i class="ph-bold ph-instagram-logo"></i>
+          </a>
+          <a class="header-social-btn" href="https://api.whatsapp.com/send/?phone=919679505092" target="_blank"
+            title="WhatsApp">
+            <i class="ph-bold ph-whatsapp-logo"></i>
+          </a>
+          <a class="header-social-btn" href="mailto:shivasardar967@gmail.com" title="Gmail / Email">
+            <i class="ph-bold ph-envelope"></i>
+          </a>
+        </div>
+
+        <!-- Far Right: BACK TO PORTFOLIO Button & Clean Hamburger Trigger -->
+        <div class="header-right d-flex align-items-center gap-3 gap-lg-4">
+          <div class="header-three-button d-none d-md-block">
+            <a class="tw-hover-btn btn-green-wipe" href="index.html">
+              <i class="ph-bold ph-arrow-left me-1"></i> BACK TO PORTFOLIO
+            </a>
+          </div>
+
+          <div class="header-three-menu">
+            <button class="tw-offcanvas-open-btn header-hamburger-btn" aria-label="Open Navigation">
+              <i class="ph-bold ph-list"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow-1 d-flex flex-column justify-content-center py-1 py-md-2 position-relative z-2">
+    <div class="container" style="max-width: 900px;">
+      <!-- Page Header: Compact High-Contrast Ash Typography -->
+      <div class="text-center mb-2 mb-md-3">
+        <span class="d-inline-block mb-1 text-uppercase font-heading lets-talk-badge">
+          07 // DIRECT STUDIO BOOKING
+        </span>
+        <h1 class="hero-title-main font-heading mb-1 lets-talk-main-title">
+          Let’s Build Something <span class="lets-talk-iconic-word">Iconic.</span>
+        </h1>
+        <p class="mb-0 fs-6 lets-talk-subtitle">
+          Tell me about your project scope, target timeline, and goals. I usually reply within a few hours.
+        </p>
+      </div>
+
+      <!-- 3D Elevated Form Frame with Ambient Ash Shadow System -->
+      <div class="lets-talk-form-card-wrapper">
+        <div class="lets-talk-form-card">
+          <!-- Frame Background Image (Replace in assets/pages/lets-talk/images/lets-talk-card.jpg) -->
+          <img class="lets-talk-card-bg-img" src="assets/pages/lets-talk/images/lets-talk-card.jpg"
+            alt="Let's Talk Frame Background"
+            onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+          <div class="lets-talk-card-overlay"></div>
+
+          <div class="position-relative z-1">
+            <!-- Dynamic Brief Sync Banner -->
+            <div class="brief-sync-badge mb-2 mb-md-3" id="briefSyncBadge" style="display: none;">
+              <i class="ph-bold ph-check-circle me-2 fs-5"></i>
+              <span>CREATIVE BRIEF SYNCHRONIZED // CONFIRM YOUR CONTACT DETAILS BELOW</span>
+            </div>
+
+            <form action="https://formsubmit.co/a685635f2cd7878d53dfac4eb4654846" method="POST" id="inquiryForm" novalidate>
+              <input type="hidden" name="_subject" id="formSubject" value="[K LABS PORTAL] 🚀 New Project Inquiry — K LABS Studio" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="PORTAL_IDENTITY" value="K LABS Studio // Shiva Sardar Portfolio Direct Transmission" />
+              <input type="hidden" name="AUTHENTICATION" value="✓ VERIFIED SECURE CLIENT INQUIRY" />
+
+              <!-- 1. Capabilities -->
+              <div class="mb-2 mb-md-3">
+                <label class="text-white fw-bold fs-6 font-heading mb-1 mb-md-2 d-block">
+                  1. What capabilities do you need? <span class="fw-normal"
+                    style="color: rgba(255, 255, 255, 0.72); font-size: 0.8rem;">(Select at least one)</span>
+                </label>
+                <div class="d-flex flex-wrap gap-1 gap-md-2 capability-chips-container" id="capabilityChipsWrapper">
+                  <span class="kairon-tool-chip">2D Animation &amp; Motion</span>
+                  <span class="kairon-tool-chip">3D Animation &amp; Modelling</span>
+                  <span class="kairon-tool-chip">VFX &amp; Compositing</span>
+                  <span class="kairon-tool-chip">High-CTR Thumbnail Design</span>
+                  <span class="kairon-tool-chip">Web &amp; App Engineering</span>
+                  <span class="kairon-tool-chip">AI &amp; Automation Systems</span>
+                </div>
+                <div class="feedback-msg" id="capabilityFeedback">
+                  <i class="ph-bold ph-warning-circle"></i> <span>Please select at least one required capability / discipline.</span>
+                </div>
+                <input type="hidden" name="selected_capabilities" id="selectedCapabilities" value="" />
+              </div>
+
+              <!-- 2. Contact Details & Unified Channel Selector -->
+              <div class="mb-2 mb-md-3">
+                <label class="text-white fw-bold fs-6 font-heading mb-1 mb-md-2 d-block">
+                  2. Identity &amp; Contact Channel
+                </label>
+                <div class="row g-2">
+                  <!-- Name Input -->
+                  <div class="col-md-6">
+                    <label for="clientName" class="d-block mb-1" style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.85);">Your Name / Brand</label>
+                    <input type="text" id="clientName" name="name" class="form-control" placeholder="e.g. Shiva Sardar or Studio Alpha" required />
+                    <div class="feedback-msg" id="nameFeedback"><i class="ph-bold ph-warning-circle"></i> <span>Please enter your name or brand.</span></div>
+                  </div>
+
+                  <!-- Timeline / Deadline -->
+                  <div class="col-md-6">
+                    <label for="timelineInput" class="d-block mb-1" style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.85);">Target Timeline</label>
+                    <input type="text" id="timelineInput" name="timeline" class="form-control"
+                      placeholder="e.g., 2 weeks, ASAP, Flexible" />
+                  </div>
+
+                  <!-- 1 Single Seamless Unified Contact Box (Dropdown on Left + Dynamic Icon + Input Field) -->
+                  <div class="col-12">
+                    <label id="contactDetailLabel" for="contactDetailInput" class="d-block mb-1" style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.85);">
+                      Your Contact Details (Select Channel &amp; Enter Handle / Number / Email)
+                    </label>
+                    <div class="unified-contact-box" id="unifiedContactBox">
+                      <!-- Dropdown on Left -->
+                      <div class="contact-channel-addon">
+                        <select id="contactChannelSelect" name="preferred_channel" class="contact-channel-select" aria-label="Select Contact Method">
+                          <option value="instagram" selected>Instagram</option>
+                          <option value="whatsapp">WhatsApp</option>
+                          <option value="email">Email</option>
+                        </select>
+                        <i class="ph-bold ph-caret-down channel-select-caret"></i>
+                      </div>
+
+                      <!-- Dynamic Icon immediately next to Dropdown -->
+                      <div class="contact-dynamic-icon-slot">
+                        <i id="contactMethodIcon" class="ph-bold ph-instagram-logo"></i>
+                      </div>
+
+                      <!-- Input Field within the exact same frame -->
+                      <input type="text" id="contactDetailInput" name="contact_value" class="unified-contact-input"
+                        placeholder="@zee_god._ or your_username" autocomplete="off" required />
+
+                      <!-- Live Status / Shield Icon -->
+                      <div class="contact-status-indicator" id="contactStatusIcon">
+                        <i class="ph-bold ph-shield-check"></i>
+                      </div>
+                    </div>
+
+                    <div class="feedback-msg" id="contactFeedback">
+                      <i class="ph-bold ph-warning-circle"></i> <span id="contactFeedbackText">Please enter a valid Instagram handle.</span>
+                    </div>
+                    <div class="form-hint" id="contactHintText">
+                      Select channel from the dropdown and enter your handle or number.
+                    </div>
+                  </div>
+
+                  <!-- Project Description -->
+                  <div class="col-12">
+                    <label for="projectDescInput" class="d-block mb-1" style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.85);">Project Scope &amp; Vision</label>
+                    <textarea id="projectDescInput" name="project_description" rows="2" class="form-control"
+                      placeholder="Briefly describe what you're looking to create, any reference links, or existing assets..."
+                      required></textarea>
+                    <div class="feedback-msg" id="descFeedback"><i class="ph-bold ph-warning-circle"></i> <span>Please provide a brief description of your project.</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons & Quick Direct Reach -->
+              <div class="d-flex flex-column flex-sm-row align-items-stretch align-items-sm-center justify-content-between gap-3 pt-2">
+                <button type="submit" id="submitInquiryBtn"
+                  class="tw-hover-btn btn-green-wipe py-2 px-4 justify-content-center"
+                  style="font-size: 0.9rem;">
+                  <i class="ph-bold ph-paper-plane-tilt me-1"></i> SUBMIT INQUIRY
+                </button>
+
+                <!-- Quick Direct Reach Bar -->
+                <div class="d-flex flex-wrap align-items-center gap-2">
+                  <span class="d-none d-lg-inline text-white-50" style="font-size: 0.78rem;">Direct Contact:</span>
+                  <a href="https://api.whatsapp.com/send/?phone=919679505092" target="_blank" class="quick-reach-badge" title="Chat on WhatsApp">
+                    <i class="ph-bold ph-whatsapp-logo" style="color: #00e676;"></i> WhatsApp
+                  </a>
+                  <a href="https://www.instagram.com/zee_god._/" target="_blank" class="quick-reach-badge" title="Message on Instagram">
+                    <i class="ph-bold ph-instagram-logo" style="color: #e1306c;"></i> Instagram
+                  </a>
+                  <a href="mailto:shivasardar967@gmail.com" class="quick-reach-badge" title="Send Email">
+                    <i class="ph-bold ph-envelope" style="color: #38bdf8;"></i> Email
+                  </a>
+                </div>
+              </div>
+            </form>
+
+            <!-- In-Card Holographic Transmission Success View (Zero External Redirects) -->
+            <div class="submission-success-card" id="submissionSuccessCard">
+              <div class="submission-success-icon-wrap">
+                <i class="ph-bold ph-check text-white fs-2"></i>
+              </div>
+              <div class="mb-2">
+                <span class="badge rounded-pill px-3 py-1 mb-2"
+                  style="background: rgba(0, 230, 118, 0.15); color: #00e676; border: 1px solid #00e676; font-size: 0.78rem; letter-spacing: 0.08em;">
+                  ● TRANSMISSION LOGGED
+                </span>
+                <h3 class="text-white font-heading mb-1" style="font-size: 1.5rem; font-weight: 800;">
+                  Inquiry Received by K LABS Studio
+                </h3>
+                <p class="text-white-50 mb-0" style="font-size: 0.88rem; max-width: 520px; margin: 0 auto;">
+                  Your project brief has been encrypted and delivered directly to Shiva Sardar's inbox. We will review your vision and connect back on your preferred channel within 2 hours.
+                </p>
+              </div>
+
+              <div class="submission-summary-box" id="submissionSummaryContent">
+                <!-- Injected via JavaScript -->
+              </div>
+
+              <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
+                <button type="button" id="resetInquiryBtn" class="tw-hover-btn btn-green-wipe py-2 px-3" style="font-size: 0.85rem;">
+                  <i class="ph-bold ph-arrows-counter-clockwise me-1"></i> SEND ANOTHER INQUIRY
+                </button>
+                <a href="index.html" class="quick-reach-badge py-2 px-3" style="font-size: 0.85rem;">
+                  <i class="ph-bold ph-arrow-left"></i> BACK TO PORTFOLIO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Simple -->
+  <footer class="text-center py-2 text-white-50 position-relative z-2"
+    style="font-size: 0.8rem; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+    <div class="container">
+      <p class="mb-0" style="color: #64748b;">© 2026 K LABS. 2D/3D Animation, VFX &amp; Creative Systems.</p>
+    </div>
+  </footer>
+
+  <!-- Jquery js -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!-- Phosphor Icons & JS -->
+  <script src="assets/js/phosphor-icon.js"></script>
+  <!-- Bootstrap Bundle Js -->
+  <script src="assets/js/boostrap.bundle.min.js"></script>
+  <!-- GSAP Engine -->
+  <script src="assets/js/gsap/gsap.js"></script>
+  <!-- AOS -->
+  <script src="assets/js/aos.js"></script>
+  <!-- Cursor JS -->
+  <script src="assets/js/tw-cursor.js"></script>
+  <!-- Floating Ash & Emerald Particles System -->
+  <script src="assets/js/kairon-particles.js"></script>
+
+  <!-- Interactive Capability Chips, AOS Init, Offcanvas Menu & Unified Silky GSAP Physics Drag -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof AOS !== 'undefined') {
+        AOS.init({
+          duration: 800,
+          once: true
+        });
+      }
+
+      // Offcanvas Mobile Menu Open / Close
+      if (typeof $ !== 'undefined') {
+        $('.tw-offcanvas-open-btn').on('click', function () {
+          $('.tw-offcanvas-2-area').addClass('opened');
+        });
+        $('.tw-offcanvas-2-close-btn').on('click', function () {
+          $('.tw-offcanvas-2-area').removeClass('opened');
+        });
+      }
+
+      window.addEventListener('pageshow', function () {
+        if (typeof $ !== 'undefined') {
+          $('.tw-offcanvas-2-area').removeClass('opened');
+        }
+      });
+
+      // Capability Chips Toggle & Validation
+      const chips = document.querySelectorAll('#capabilityChipsWrapper .kairon-tool-chip');
+      const hiddenInput = document.getElementById('selectedCapabilities');
+      const capabilityFeedback = document.getElementById('capabilityFeedback');
+      const capabilityWrapper = document.getElementById('capabilityChipsWrapper');
+
+      function validateCapabilities() {
+        const activeChips = document.querySelectorAll('#capabilityChipsWrapper .kairon-tool-chip.active');
+        if (!activeChips.length || !hiddenInput || !hiddenInput.value.trim()) {
+          if (capabilityWrapper) capabilityWrapper.classList.add('is-invalid-chips');
+          if (capabilityFeedback) capabilityFeedback.className = 'feedback-msg show-error';
+          return false;
+        } else {
+          if (capabilityWrapper) capabilityWrapper.classList.remove('is-invalid-chips');
+          if (capabilityFeedback) capabilityFeedback.className = 'feedback-msg';
+          return true;
+        }
+      }
+
+      if (chips.length && hiddenInput) {
+        chips.forEach(chip => {
+          chip.addEventListener('click', function () {
+            this.classList.toggle('active');
+            const selected = Array.from(document.querySelectorAll('#capabilityChipsWrapper .kairon-tool-chip.active'))
+              .map(c => c.textContent.trim());
+            hiddenInput.value = selected.join(', ');
+            validateCapabilities();
+          });
+        });
+      }
+
+      // Consume Synchronized Brief from Page 7 (via sessionStorage or URL query params)
+      let briefData = null;
+      try {
+        const stored = sessionStorage.getItem('kairon_brief');
+        if (stored) {
+          briefData = JSON.parse(stored);
+          sessionStorage.removeItem('kairon_brief');
+        }
+      } catch (e) { }
+
+      if (!briefData) {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('styles') || urlParams.has('timeline') || urlParams.has('budget') || urlParams.has('notes')) {
+          briefData = {
+            styles: (urlParams.get('styles') || '').split(';').map(s => s.trim()).filter(Boolean),
+            timeline: urlParams.get('timeline') || '',
+            budget: urlParams.get('budget') || '',
+            vision: urlParams.get('notes') || ''
+          };
+        }
+      }
+
+      if (briefData) {
+        const syncBadge = document.getElementById('briefSyncBadge');
+        if (syncBadge) {
+          syncBadge.style.display = 'flex';
+          if (typeof gsap !== 'undefined') {
+            gsap.from(syncBadge, { opacity: 0, y: -15, duration: 0.6, ease: 'power2.out' });
+          }
+        }
+
+        // Pre-select matching capability chips
+        if (briefData.styles && briefData.styles.length > 0) {
+          chips.forEach(chip => {
+            const text = chip.textContent.trim().toLowerCase();
+            const matched = briefData.styles.some(s => {
+              const sl = s.toLowerCase();
+              return sl.includes(text) || text.includes(sl) || (sl.includes('2d') && text.includes('2d')) || (sl.includes('3d') && text.includes('3d')) || (sl.includes('vfx') && text.includes('vfx')) || (sl.includes('thumbnail') && text.includes('thumbnail')) || (sl.includes('web') && text.includes('web'));
+            });
+            if (matched) {
+              chip.classList.add('active');
+            }
+          });
+          const selected = Array.from(document.querySelectorAll('#capabilityChipsWrapper .kairon-tool-chip.active'))
+            .map(c => c.textContent.trim());
+          if (hiddenInput && selected.length) {
+            hiddenInput.value = selected.join(', ');
+            validateCapabilities();
+          }
+        }
+
+        // Pre-fill Timeline
+        const timelineInput = document.querySelector('input[name="timeline"]');
+        if (timelineInput && briefData.timeline) {
+          timelineInput.value = briefData.timeline;
+        }
+
+        // Pre-fill Project Description with Budget & Vision
+        const descTextarea = document.querySelector('textarea[name="project_description"]');
+        if (descTextarea) {
+          let desc = '';
+          if (briefData.budget) desc += `[Target Budget Tier: ${briefData.budget}]\n`;
+          if (briefData.vision) desc += `${briefData.vision}`;
+          descTextarea.value = desc.trim();
+        }
+      }
+
+      // Dynamic Contact Channel Configuration & Live Validation
+      const channelSelect = document.getElementById('contactChannelSelect');
+      const contactLabel = document.getElementById('contactDetailLabel');
+      const contactIcon = document.getElementById('contactMethodIcon');
+      const contactInput = document.getElementById('contactDetailInput');
+      const contactFeedback = document.getElementById('contactFeedback');
+      const contactFeedbackText = document.getElementById('contactFeedbackText');
+      const contactHint = document.getElementById('contactHintText');
+
+      const clientNameInput = document.getElementById('clientName');
+      const nameFeedback = document.getElementById('nameFeedback');
+
+      const projectDescInput = document.getElementById('projectDescInput');
+      const descFeedback = document.getElementById('descFeedback');
+
+      const form = document.getElementById('inquiryForm');
+      const submitBtn = document.getElementById('submitInquiryBtn');
+      const successCard = document.getElementById('submissionSuccessCard');
+      const summaryContent = document.getElementById('submissionSummaryContent');
+      const resetBtn = document.getElementById('resetInquiryBtn');
+
+      const unifiedBox = document.getElementById('unifiedContactBox');
+      const contactStatusIcon = document.getElementById('contactStatusIcon');
+
+      const channelConfigs = {
+        instagram: {
+          label: 'Your Instagram Handle',
+          placeholder: '@zee_god._ or your_username',
+          iconClass: 'ph-bold ph-instagram-logo',
+          iconColor: '#e1306c',
+          type: 'text',
+          fieldName: 'instagram_handle',
+          hint: 'Select your preferred channel (Instagram, WhatsApp, or Email) and enter your genuine handle or number.',
+          errorMsg: 'Please enter a valid Instagram handle (e.g. @username or username).',
+          validator: (val) => {
+            const clean = val.replace(/^@/, '').trim();
+            return /^[a-zA-Z0-9._]{2,30}$/.test(clean);
+          }
+        },
+        whatsapp: {
+          label: 'Your WhatsApp Number',
+          placeholder: '+91 96795 05092 (with country code)',
+          iconClass: 'ph-bold ph-whatsapp-logo',
+          iconColor: '#00e676',
+          type: 'tel',
+          fieldName: 'whatsapp_number',
+          hint: 'Include your country code (e.g., +91 for India, +1 for US/Canada).',
+          errorMsg: 'Please enter a valid WhatsApp phone number with country code.',
+          validator: (val) => {
+            const digits = val.replace(/[^0-9]/g, '');
+            return /^\+?[0-9\s\-()]{7,20}$/.test(val.trim()) && digits.length >= 7 && digits.length <= 15;
+          }
+        },
+        email: {
+          label: 'Your Email Address',
+          placeholder: 'name@company.com or your_email@gmail.com',
+          iconClass: 'ph-bold ph-envelope',
+          iconColor: '#38bdf8',
+          type: 'email',
+          fieldName: 'email_address',
+          hint: 'Enter your genuine email address so we can reply with project proposals.',
+          errorMsg: 'Please enter a valid email address (e.g. name@domain.com).',
+          validator: (val) => {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val.trim());
+          }
+        }
+      };
+
+      function updateChannelUI(channelKey) {
+        const config = channelConfigs[channelKey] || channelConfigs.instagram;
+        if (contactInput) {
+          contactInput.placeholder = config.placeholder;
+          contactInput.type = config.type;
+          contactInput.name = config.fieldName;
+        }
+        if (contactIcon) {
+          contactIcon.className = config.iconClass;
+          contactIcon.style.color = config.iconColor || '#00e676';
+          if (typeof gsap !== 'undefined') {
+            gsap.fromTo(contactIcon, { scale: 0.6, rotate: -20 }, { scale: 1, rotate: 0, duration: 0.35, ease: 'back.out(2)' });
+          }
+        }
+        if (contactHint) contactHint.innerHTML = config.hint;
+
+        // Reset feedback
+        if (unifiedBox) {
+          unifiedBox.classList.remove('is-invalid-custom', 'is-valid-custom');
+        }
+        if (contactFeedback) {
+          contactFeedback.classList.remove('show-error', 'show-valid');
+        }
+
+        if (contactInput && contactInput.value.trim().length > 0) {
+          validateContactInput();
+        }
+      }
+
+      function validateContactInput() {
+        if (!channelSelect || !contactInput || !contactFeedback || !contactFeedbackText) return true;
+        const currentChannel = channelSelect.value;
+        const rawVal = contactInput.value.trim();
+
+        if (!rawVal) {
+          if (unifiedBox) {
+            unifiedBox.classList.add('is-invalid-custom');
+            unifiedBox.classList.remove('is-valid-custom');
+          }
+          contactFeedbackText.textContent = 'This contact field is required.';
+          contactFeedback.className = 'feedback-msg show-error';
+          if (contactStatusIcon) contactStatusIcon.innerHTML = '<i class="ph-bold ph-warning-circle" style="color: #ef4444;"></i>';
+          return false;
+        }
+
+        let isValid = false;
+        let errorMessage = '';
+
+        if (currentChannel === 'instagram') {
+          const clean = rawVal.replace(/^@/, '').trim();
+          const isEmailLike = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(rawVal);
+          const isPureDigits = /^\+?[0-9\s\-()]{7,}$/.test(rawVal);
+          const isGibberish = /^(asdf+|qwerty+|test+|none|null|fake|aaaa+|123456+)$/i.test(clean);
+
+          if (isEmailLike) {
+            errorMessage = 'You entered an Email. Please enter your Instagram handle or switch dropdown to Email.';
+          } else if (isPureDigits) {
+            errorMessage = 'You entered a Phone number. Please enter your Instagram username or switch dropdown to WhatsApp.';
+          } else if (clean.length < 2 || clean.length > 30) {
+            errorMessage = 'Instagram usernames must be between 2 and 30 characters.';
+          } else if (clean.startsWith('.') || clean.endsWith('.')) {
+            errorMessage = 'Instagram usernames cannot start or end with a period.';
+          } else if (/\.\./.test(clean)) {
+            errorMessage = 'Instagram usernames cannot contain consecutive periods.';
+          } else if (!/^[a-zA-Z0-9._]+$/.test(clean)) {
+            errorMessage = 'Instagram usernames can only contain letters, numbers, underscores, and dots (no spaces or symbols).';
+          } else if (/^[0-9]+$/.test(clean)) {
+            errorMessage = 'Instagram username cannot be pure numbers. Please enter your valid username.';
+          } else if (isGibberish) {
+            errorMessage = 'Please enter a genuine Instagram username.';
+          } else {
+            isValid = true;
+          }
+        } else if (currentChannel === 'whatsapp') {
+          const isEmailLike = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(rawVal);
+          const hasLetters = /[a-zA-Z]/.test(rawVal);
+          const digitsOnly = rawVal.replace(/[^0-9]/g, '');
+          const isDummyNumber = /^(0{7,}|1{7,}|2{7,}|3{7,}|4{7,}|5{7,}|6{7,}|7{7,}|8{7,}|9{7,}|1234567890)$/.test(digitsOnly);
+
+          if (isEmailLike) {
+            errorMessage = 'You entered an Email. Please enter a WhatsApp phone number or switch dropdown to Email.';
+          } else if (hasLetters) {
+            errorMessage = 'You entered letters/username. Please enter a valid WhatsApp phone number with country code.';
+          } else if (digitsOnly.length < 10 || digitsOnly.length > 15) {
+            errorMessage = 'Please enter a valid 10 to 15 digit WhatsApp number including country code (e.g. +91 9679505092).';
+          } else if (isDummyNumber) {
+            errorMessage = 'Please enter a genuine WhatsApp number (not dummy repeated digits).';
+          } else {
+            isValid = true;
+          }
+        } else if (currentChannel === 'email') {
+          const hasAt = rawVal.includes('@');
+          const isPureDigits = /^\+?[0-9\s\-()]{7,}$/.test(rawVal);
+          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,24}$/;
+          const isDummyEmail = /^(test@test\.com|fake@fake\.com|a@a\.com|asdf@asdf\.com|123@123\.com)$/i.test(rawVal);
+
+          if (isPureDigits) {
+            errorMessage = 'You entered a Phone number. Please enter a valid Email address or switch dropdown to WhatsApp.';
+          } else if (!hasAt) {
+            errorMessage = 'Missing "@" in email. Please enter a valid email address (e.g. name@company.com).';
+          } else if (!emailRegex.test(rawVal)) {
+            errorMessage = 'Please enter a valid email address format (e.g. name@domain.com).';
+          } else if (isDummyEmail) {
+            errorMessage = 'Please enter a genuine, active email address.';
+          } else {
+            isValid = true;
+          }
+        }
+
+        if (!isValid) {
+          if (unifiedBox) {
+            unifiedBox.classList.add('is-invalid-custom');
+            unifiedBox.classList.remove('is-valid-custom');
+          }
+          contactFeedbackText.textContent = errorMessage;
+          contactFeedback.className = 'feedback-msg show-error';
+          if (contactStatusIcon) contactStatusIcon.innerHTML = '<i class="ph-bold ph-warning-circle" style="color: #ef4444;"></i>';
+          return false;
+        } else {
+          if (unifiedBox) {
+            unifiedBox.classList.remove('is-invalid-custom');
+            unifiedBox.classList.add('is-valid-custom');
+          }
+          contactFeedbackText.textContent = 'Genuine format verified ✓';
+          contactFeedback.className = 'feedback-msg show-valid';
+          if (contactStatusIcon) contactStatusIcon.innerHTML = '<i class="ph-bold ph-check-circle" style="color: #00e676;"></i>';
+          return true;
+        }
+      }
+
+      function validateName() {
+        if (!clientNameInput) return true;
+        const val = clientNameInput.value.trim();
+        const isDummy = /^(asdf+|qwerty+|test+|none|null|fake|aaaa+|123456+)$/i.test(val);
+        if (val.length < 2 || isDummy) {
+          clientNameInput.classList.add('is-invalid-custom');
+          clientNameInput.classList.remove('is-valid-custom');
+          if (nameFeedback) {
+            nameFeedback.querySelector('span').textContent = isDummy ? 'Please enter a genuine name or brand.' : 'Please enter your name or brand (at least 2 characters).';
+            nameFeedback.className = 'feedback-msg show-error';
+          }
+          return false;
+        } else {
+          clientNameInput.classList.remove('is-invalid-custom');
+          clientNameInput.classList.add('is-valid-custom');
+          if (nameFeedback) nameFeedback.className = 'feedback-msg';
+          return true;
+        }
+      }
+
+      function validateDesc() {
+        if (!projectDescInput) return true;
+        const val = projectDescInput.value.trim();
+        const isDummy = /^(asdf+|qwerty+|test+|none|null|fake|aaaa+)$/i.test(val);
+        if (val.length < 5 || isDummy) {
+          projectDescInput.classList.add('is-invalid-custom');
+          projectDescInput.classList.remove('is-valid-custom');
+          if (descFeedback) {
+            descFeedback.querySelector('span').textContent = isDummy ? 'Please enter genuine project scope details.' : 'Please provide a brief description of your project (at least 5 characters).';
+            descFeedback.className = 'feedback-msg show-error';
+          }
+          return false;
+        } else {
+          projectDescInput.classList.remove('is-invalid-custom');
+          projectDescInput.classList.add('is-valid-custom');
+          if (descFeedback) descFeedback.className = 'feedback-msg';
+          return true;
+        }
+      }
+
+      if (channelSelect) {
+        channelSelect.addEventListener('change', function () {
+          updateChannelUI(this.value);
+        });
+      }
+
+      if (contactInput) {
+        contactInput.addEventListener('input', validateContactInput);
+        contactInput.addEventListener('blur', validateContactInput);
+      }
+
+      if (clientNameInput) {
+        clientNameInput.addEventListener('input', validateName);
+        clientNameInput.addEventListener('blur', validateName);
+      }
+
+      if (projectDescInput) {
+        projectDescInput.addEventListener('input', validateDesc);
+        projectDescInput.addEventListener('blur', validateDesc);
+      }
+
+      // Handle Form Submission via AJAX (Zero External Redirects & Custom In-Card Experience)
+      if (form) {
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+
+          const isCapValid = validateCapabilities();
+          const isNameValid = validateName();
+          const isContactValid = validateContactInput();
+          const isDescValid = validateDesc();
+
+          if (!isCapValid || !isNameValid || !isContactValid || !isDescValid) {
+            if (!isCapValid) {
+              if (capabilityWrapper) capabilityWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+              const firstInvalid = form.querySelector('.is-invalid-custom');
+              if (firstInvalid) firstInvalid.focus();
+            }
+            return false;
+          }
+
+          const clientNameVal = clientNameInput ? clientNameInput.value.trim() : 'New Client';
+          const channelVal = channelSelect ? channelSelect.value.toUpperCase() : 'DIRECT';
+          const capVal = hiddenInput ? hiddenInput.value : 'N/A';
+          const contactVal = contactInput ? contactInput.value.trim() : 'N/A';
+          const timeVal = document.querySelector('input[name="timeline"]')?.value.trim() || 'Flexible';
+          const descVal = projectDescInput ? projectDescInput.value.trim() : '';
+
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="ph-bold ph-spinner-gap ph-spin me-1"></i> ENCRYPTING &amp; TRANSMITTING...';
+          }
+
+          // Generate Direct Clickable Action Link for Shiva's Email
+          let directActionUrl = '';
+          if (channelVal === 'INSTAGRAM') {
+            const cleanHandle = contactVal.replace(/^@/, '').trim();
+            directActionUrl = `https://www.instagram.com/${cleanHandle}/`;
+          } else if (channelVal === 'WHATSAPP') {
+            const cleanDigits = contactVal.replace(/[^0-9]/g, '');
+            directActionUrl = `https://wa.me/${cleanDigits}`;
+          } else if (channelVal === 'EMAIL') {
+            directActionUrl = `mailto:${contactVal}`;
+          }
+
+          // Build Structured FormSubmit Payload
+          const formData = new FormData();
+          formData.append('_subject', `[K LABS PORTAL] 🚀 New Project Inquiry — ${clientNameVal} (${channelVal})`);
+          formData.append('_template', 'table');
+          formData.append('_captcha', 'false');
+          formData.append('PORTAL_ORIGIN', 'K LABS Creative Studio (Official Transmission Engine)');
+          formData.append('CLIENT_NAME', clientNameVal);
+          formData.append('REQUIRED_DISCIPLINES', capVal);
+          formData.append('PREFERRED_CHANNEL', channelVal);
+          formData.append('CONTACT_HANDLE_OR_NUMBER', contactVal);
+
+          if (channelVal === 'INSTAGRAM') {
+            formData.append('DIRECT_INSTAGRAM_PROFILE_LINK', directActionUrl);
+          } else if (channelVal === 'WHATSAPP') {
+            formData.append('DIRECT_WHATSAPP_CHAT_LINK', directActionUrl);
+          } else if (channelVal === 'EMAIL') {
+            formData.append('DIRECT_EMAIL_LINK', directActionUrl);
+            formData.append('_replyto', contactVal);
+          }
+
+          formData.append('TARGET_TIMELINE', timeVal);
+          formData.append('PROJECT_SCOPE_AND_VISION', descVal);
+          formData.append('AUTHENTICATION', '✓ VERIFIED AUTHENTIC CLIENT TRANSMISSION');
+
+          try {
+            // Send via FormSubmit AJAX API with Token
+            const response = await fetch('https://formsubmit.co/ajax/a685635f2cd7878d53dfac4eb4654846', {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+
+            const result = await response.json();
+
+            // Populate In-Card Success Summary
+            if (summaryContent) {
+              summaryContent.innerHTML = `
+                <div class="submission-summary-item">
+                  <span class="text-white-50">Client / Brand:</span>
+                  <span class="text-white fw-bold">${clientNameVal}</span>
+                </div>
+                <div class="submission-summary-item">
+                  <span class="text-white-50">Disciplines:</span>
+                  <span class="text-white fw-bold" style="color: #00e676 !important;">${capVal}</span>
+                </div>
+                <div class="submission-summary-item">
+                  <span class="text-white-50">Contact Channel:</span>
+                  <span class="text-white fw-bold">${channelVal} (${contactVal})</span>
+                </div>
+                <div class="submission-summary-item">
+                  <span class="text-white-50">Direct Action Link:</span>
+                  <a href="${directActionUrl}" target="_blank" class="fw-bold text-decoration-none" style="color: #00e676 !important; font-size: 0.82rem;">
+                    Open ${channelVal} ↗
+                  </a>
+                </div>
+                <div class="submission-summary-item">
+                  <span class="text-white-50">Timeline:</span>
+                  <span class="text-white fw-bold">${timeVal}</span>
+                </div>
+                <div class="pt-2">
+                  <span class="text-white-50 d-block mb-1" style="font-size: 0.78rem;">Project Scope:</span>
+                  <p class="text-white mb-0" style="font-size: 0.84rem; font-style: italic; line-height: 1.4;">"${descVal}"</p>
+                </div>
+              `;
+            }
+
+            // Hide form, show success state smoothly
+            form.style.display = 'none';
+            if (successCard) {
+              successCard.classList.add('is-visible');
+              if (typeof gsap !== 'undefined') {
+                gsap.from(successCard, { opacity: 0, scale: 0.95, duration: 0.5, ease: 'power2.out' });
+              }
+            }
+          } catch (err) {
+            console.error('Submission error:', err);
+            form.submit();
+          } finally {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = '<i class="ph-bold ph-paper-plane-tilt me-1"></i> SUBMIT INQUIRY';
+            }
+          }
+        });
+      }
+
+      // Reset inquiry form button
+      if (resetBtn) {
+        resetBtn.addEventListener('click', function () {
+          if (form) {
+            form.reset();
+            form.style.display = 'block';
+            chips.forEach(c => c.classList.remove('active'));
+            if (hiddenInput) hiddenInput.value = '';
+            updateChannelUI('instagram');
+          }
+          if (successCard) {
+            successCard.classList.remove('is-visible');
+          }
+        });
+      }
+
+      // 3D Draggable Frame with Buttery 1:1 Tracking & Visible Elastic Spring Return
+      const card = document.querySelector('.lets-talk-form-card');
+      const wrapper = document.querySelector('.lets-talk-form-card-wrapper');
+
+      if (card && typeof gsap !== 'undefined') {
+        let isDragging = false;
+        let startPointerX = 0;
+        let startPointerY = 0;
+        let curX = 0;
+        let curY = 0;
+        let idleFloatTween = null;
+
+        // Continuous Organic Idle Float via GSAP
+        function startIdleFloat() {
+          if (idleFloatTween) idleFloatTween.kill();
+          idleFloatTween = gsap.to(card, {
+            y: '-=9',
+            rotationZ: 0.4,
+            rotationX: 0.8,
+            duration: 3.2,
+            ease: 'sine.inOut',
+            yoyo: true,
+            repeat: -1
+          });
+        }
+
+        // Initialize Idle Float
+        startIdleFloat();
+
+        function onPointerDown(e) {
+          // Ignore clicks on inputs, textareas, buttons, links, or chips
+          if (e.target.closest('input, textarea, button, a, .kairon-tool-chip, select, label')) {
+            return;
+          }
+
+          isDragging = true;
+          card.classList.add('is-dragging');
+
+          // Pause idle float cleanly
+          if (idleFloatTween) idleFloatTween.pause();
+          gsap.killTweensOf(card);
+          if (wrapper) gsap.killTweensOf(wrapper);
+
+          startPointerX = e.clientX - curX;
+          startPointerY = e.clientY - curY;
+
+          if (card.setPointerCapture) {
+            try { card.setPointerCapture(e.pointerId); } catch (err) { }
+          }
+        }
+
+        function onPointerMove(e) {
+          if (!isDragging) return;
+
+          curX = e.clientX - startPointerX;
+          curY = e.clientY - startPointerY;
+
+          // Physics 3D Tilt based on movement
+          const tiltX = Math.max(-16, Math.min(16, -curY * 0.04));
+          const tiltY = Math.max(-16, Math.min(16, curX * 0.04));
+          const tiltZ = Math.max(-8, Math.min(8, curX * 0.02));
+
+          // 1:1 Instantaneous Silky Follow (Zero Lag / Zero Friction)
+          gsap.set(card, {
+            x: curX,
+            y: curY,
+            rotationX: tiltX,
+            rotationY: tiltY,
+            rotationZ: tiltZ,
+            scale: 1.025
+          });
+
+          if (wrapper) {
+            gsap.set(wrapper, {
+              x: curX * 0.12,
+              y: curY * 0.12
+            });
+          }
+        }
+
+        function onPointerUp(e) {
+          if (!isDragging) return;
+          isDragging = false;
+          card.classList.remove('is-dragging');
+
+          if (card.releasePointerCapture) {
+            try { card.releasePointerCapture(e.pointerId); } catch (err) { }
+          }
+
+          // Visible Silky Spring Bounce Rebound Back to Home Position
+          gsap.to(card, {
+            x: 0,
+            y: 0,
+            rotationX: 0,
+            rotationY: 0,
+            rotationZ: 0,
+            scale: 1,
+            duration: 0.9,
+            ease: 'back.out(2)',
+            onComplete: function () {
+              curX = 0;
+              curY = 0;
+              // Smoothly resume gentle zero-G floating motion
+              startIdleFloat();
+            }
+          });
+
+          if (wrapper) {
+            gsap.to(wrapper, {
+              x: 0,
+              y: 0,
+              duration: 0.8,
+              ease: 'back.out(2)'
+            });
+          }
+        }
+
+        card.addEventListener('pointerdown', onPointerDown);
+        window.addEventListener('pointermove', onPointerMove);
+        window.addEventListener('pointerup', onPointerUp);
+        window.addEventListener('pointercancel', onPointerUp);
+      }
+
+      // Smooth laser transition when clicking back to portfolio
+      function triggerLaserBack(targetUrl) {
+        const overlay = document.getElementById('transmission-laser-overlay');
+        if (overlay) {
+          overlay.classList.add('is-active');
+          setTimeout(() => {
+            window.location.href = targetUrl;
+          }, 500);
+        } else {
+          window.location.href = targetUrl;
+        }
+      }
+
+      document.querySelectorAll('.header-three-logo a, .header-three-button a, .twoffcanvas__logo a').forEach(el => {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          const href = this.getAttribute('href') || 'index.html';
+          triggerLaserBack(href);
+        });
+      });
+    });
+  </script>
+
+  <!-- Cinematic Transmission Laser Flash Overlay -->
+  <div id="transmission-laser-overlay" class="transmission-laser-overlay">
+    <div class="laser-beam"></div>
+    <div class="laser-content">
+      <div class="laser-spinner"></div>
+      <div class="laser-title">CONNECTING PORTFOLIO</div>
+      <div class="laser-subtitle">RETURNING TO MAIN STORY ENGINE // K LABS 2026</div>
+    </div>
+  </div>
+</body>
+
+</html>

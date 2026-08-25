@@ -1,0 +1,2515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description"
+    content="K LABS — 2026 Director's Cut Portfolio. Cinematic Motion Direction, 3D Worlds, VFX Compositing, High-CTR Thumbnail Systems & Web/App Engineering by Shiva." />
+  <meta name="keywords"
+    content="K Labs, Shiva, Creative Technologist, Motion Director, 2D Animation, 3D Animation, Cinema 4D, Blender, VFX Compositing, High-CTR Thumbnails, Web Development, Three.js, Scrollytelling" />
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>K LABS — Creative Technology &amp; Motion Studio | 2026 Director's Cut</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/global/logo/kairon-logo.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="assets/global/logo/favicon.png" type="image/png" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Swiper Bundle -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- K Labs Awwwards Bento Scrollytelling Theme -->
+  <link rel="stylesheet" href="assets/css/kairon-theme.css?v=2.9" />
+</head>
+
+<body class="tw-magic-cursor">
+  <!-- 1. Atmospheric Film Noise Texture (Global Layer) -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!--==================== Preloader Start ====================-->
+  <div class="preloader">
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+    </svg>
+    <div class="preloader-heading">
+      <div class="load-text">
+        <span>K</span>
+        <span>L</span>
+        <span>A</span>
+        <span>B</span>
+        <span>S</span>
+      </div>
+    </div>
+  </div>
+  <!--==================== Preloader End ====================-->
+
+  <!--==================== Overlay Start ====================-->
+  <div class="overlay"></div>
+  <div class="side-overlay"></div>
+
+  <!--==================== Magic Cursor Start ====================-->
+  <div id="magic-cursor">
+    <div id="ball"></div>
+  </div>
+
+  <!-- 2. Story Chapter Floating HUD Timeline (Left Navigation) -->
+  <nav class="story-chapter-hud" aria-label="Film Chapters">
+    <a href="#top" class="story-dot-item active" data-target="top">
+      <span class="story-dot"></span>
+      <span class="story-dot-label">01 // ORIGIN</span>
+    </a>
+    <a href="#philosophy" class="story-dot-item" data-target="philosophy">
+      <span class="story-dot"></span>
+      <span class="story-dot-label">02 // MANIFESTO</span>
+    </a>
+    <a href="#persona" class="story-dot-item" data-target="persona">
+      <span class="story-dot"></span>
+      <span class="story-dot-label">03 // PERSONA &amp; MAP</span>
+    </a>
+    <a href="#chapters" class="story-dot-item" data-target="chapters">
+      <span class="story-dot"></span>
+      <span class="story-dot-label">04 // 5 CHAPTERS</span>
+    </a>
+    <a href="#vault" class="story-dot-item" data-target="vault">
+      <span class="story-dot"></span>
+      <span class="story-dot-label">05 // THE VAULT</span>
+    </a>
+    <a href="#blueprint" class="story-dot-item" data-target="blueprint">
+      <span class="story-dot"></span>
+      <span class="story-dot-label">06 // BLUEPRINT</span>
+    </a>
+    <a href="#initiate" class="story-dot-item" data-target="initiate">
+      <span class="story-dot"></span>
+      <span class="story-dot-label">07 // INITIATE</span>
+    </a>
+  </nav>
+
+  <!-- Custom Toast Message -->
+  <div id="toast-container"></div>
+
+  <!-- ==================== Scroll to Top ==================== -->
+  <div class="back-to-top-wrapper">
+    <button id="back_to_top" type="button" class="back-to-top-btn" aria-label="Back to top">
+      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ==================== Offcanvas Mobile Menu ==================== -->
+  <div class="tw-offcanvas-2-area p-relative">
+    <div class="tw-offcanvas-2-bg is-left left-box"></div>
+    <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+    <div class="tw-offcanvas-2-wrapper">
+      <div class="tw-offcanvas-2-left left-box">
+        <div class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center mb-4">
+          <div class="twoffcanvas__logo">
+            <a class="logo-1" href="index.html">
+              <img src="assets/global/logo/kairon-logo-white.svg" alt="K Labs Studio" style="height: 38px;" />
+            </a>
+          </div>
+          <div class="tw-offcanvas-2-close text-end">
+            <button class="tw-offcanvas-2-close-btn" aria-label="Close menu">
+              <span class="close-text text-white">CLOSE</span>
+              <span class="close-icon-spin ms-2">
+                <i class="ph-bold ph-x fs-4"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="tw-main-menu-mobile menu-hover-active">
+          <nav class="py-2">
+            <div class="offcanvas-content-grid mb-3">
+              <!-- Left Column: 7 Chapters Navigation with Subheadings -->
+              <div class="d-flex flex-column gap-1">
+                <a class="tw-offcanvas-nav-item" href="#top">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">01</span>
+                    <span class="tw-offcanvas-nav-text">Origin &amp; Hero</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Spatial 3D &amp; Creative Direction</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="#philosophy">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">02</span>
+                    <span class="tw-offcanvas-nav-text">Creative Manifesto</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Philosophy &amp; Kinetic Ethos</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="#persona">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">03</span>
+                    <span class="tw-offcanvas-nav-text">About Director</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Shiva Sardar — 6+ Years Mastery</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="#chapters">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">04</span>
+                    <span class="tw-offcanvas-nav-text">5 Chapters of Mastery</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Craftsmanship &amp; Core Disciplines</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="#vault">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">05</span>
+                    <span class="tw-offcanvas-nav-text">The Vault (Works)</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Selected Commercial Archive</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="#blueprint">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">06</span>
+                    <span class="tw-offcanvas-nav-text">Creation Blueprint</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">End-to-End Production Pipeline</span>
+                </a>
+
+                <a class="tw-offcanvas-nav-item" href="#initiate">
+                  <div class="tw-offcanvas-nav-header">
+                    <span class="tw-offcanvas-nav-num">07</span>
+                    <span class="tw-offcanvas-nav-text">Direct Commission</span>
+                  </div>
+                  <span class="tw-offcanvas-nav-sub">Live Interactive Terminal</span>
+                </a>
+
+                <div class="pt-3" style="display: flex; justify-content: flex-start; align-items: center; width: 100%;">
+                  <a class="offcanvas-lets-talk-pill" href="lets-talk.html" style="display: inline-block !important; width: auto !important; max-width: fit-content !important; min-width: unset !important; text-align: center !important; padding: 12px 34px !important; padding-left: 34px !important; padding-right: 34px !important; box-sizing: border-box !important; border: 1.5px solid #00e676 !important; border-radius: 9999px !important; text-decoration: none !important;">
+                    <span style="display: inline-block !important; text-align: center !important; margin: 0 auto !important; padding: 0 !important; line-height: 1 !important; white-space: nowrap !important; font-family: 'Syne', sans-serif !important; font-size: 0.92rem !important; font-weight: 800 !important; letter-spacing: 0.06em !important;">LET'S TALK // PROJECT INQUIRY ➔</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column inside Left Drawer: Studio Capabilities & Ethos -->
+              <div class="offcanvas-disciplines-card d-none d-lg-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex align-items-center justify-content-between pb-3 mb-3" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                    <span class="text-white fw-bold font-heading" style="font-size: 0.85rem; letter-spacing: 0.08em;">CREATIVE CAPABILITIES</span>
+                    <span class="badge rounded-pill" style="background: rgba(0, 230, 118, 0.15); color: #00e676; font-size: 0.7rem; border: 1px solid rgba(0, 230, 118, 0.4);">4 DISCIPLINES</span>
+                  </div>
+
+                  <div class="d-flex flex-column gap-2 mb-3">
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-play-circle offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">2D/3D Kinetic Motion</div>
+                        <div class="offcanvas-discipline-desc">Dynamic brand films, title design &amp; physics-based animation.</div>
+                      </div>
+                    </div>
+
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-cube-transparent offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">Visual Effects &amp; CGI</div>
+                        <div class="offcanvas-discipline-desc">Procedural simulation, cinematic lighting &amp; compositing.</div>
+                      </div>
+                    </div>
+
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-trend-up offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">High-CTR Creative</div>
+                        <div class="offcanvas-discipline-desc">Performance-engineered visual hooks that drive real engagement.</div>
+                      </div>
+                    </div>
+
+                    <div class="offcanvas-discipline-item">
+                      <i class="ph-bold ph-code offcanvas-discipline-icon"></i>
+                      <div>
+                        <div class="offcanvas-discipline-title">Interactive Systems</div>
+                        <div class="offcanvas-discipline-desc">WebGL shaders &amp; modern bespoke front-end experiences.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-2 rounded-3 mt-2" style="background: rgba(0, 0, 0, 0.25); border: 1px dashed rgba(255, 255, 255, 0.12);">
+                  <p class="mb-0 text-white-50" style="font-size: 0.74rem; font-style: italic; line-height: 1.4;">
+                    "Engineering visual gravity and cinematic motion for forward-thinking brands worldwide."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="tw-offcanvas-2-right right-box d-none d-md-block p-relative">
+        <div class="tw-offcanvas-2-close text-end">
+          <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-text-btn" aria-label="Close menu">
+            <span class="close-word font-heading">CLOSE</span>
+          </button>
+        </div>
+        <div class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100">
+          <div class="twoffcanvas__contact-info">
+            <div class="twoffcanvas__contact-title mb-4">
+              <h5 class="text-white font-heading">Studio Transmission</h5>
+              <p class="text-white-50" style="font-size: 0.9rem;">Engineering motion, visual effects, and digital creative systems worldwide.</p>
+            </div>
+            
+            <!-- Direct Inquiry Contacts with Animated Green Icons -->
+            <div class="d-flex flex-column gap-3 mb-4">
+              <a class="offcanvas-contact-link" href="mailto:shivasardar967@gmail.com">
+                <i class="ph-bold ph-envelope offcanvas-contact-icon"></i>
+                <span class="offcanvas-contact-text">shivasardar967@gmail.com</span>
+              </a>
+              <a class="offcanvas-contact-link" href="https://api.whatsapp.com/send/?phone=919679505092" target="_blank">
+                <i class="ph-bold ph-whatsapp-logo offcanvas-contact-icon"></i>
+                <span class="offcanvas-contact-text">+91 96795 XXXXX (WhatsApp)</span>
+              </a>
+              <a class="offcanvas-contact-link" href="https://www.instagram.com/zee_god._/" target="_blank">
+                <i class="ph-bold ph-instagram-logo offcanvas-contact-icon"></i>
+                <span class="offcanvas-contact-text">@zee_god._ (Instagram Portfolio)</span>
+              </a>
+            </div>
+
+            <!-- Studio Intelligence & Production Specs (Genuine Studio Info) -->
+            <div class="p-3 rounded-3" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.12);">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="text-white fw-bold font-heading" style="font-size: 0.8rem; letter-spacing: 0.06em;">STUDIO RADAR</span>
+                <span class="badge rounded-pill" style="background: rgba(0, 230, 118, 0.18); color: #00e676; border: 1px solid #00e676; font-size: 0.72rem;">● OPEN 2026</span>
+              </div>
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2" style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.85);">
+                <li><strong class="text-white">Response Time:</strong> Within 2 hours</li>
+                <li><strong class="text-white">Disciplines:</strong> 2D/3D Motion, VFX, High-CTR &amp; Web</li>
+                <li><strong class="text-white">Base:</strong> Kolkata, India (Global Remote)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Header (Logo on Far LEFT, Socials in CENTER, Actions on Far RIGHT) ==================== -->
+  <header id="top" class="header header-three tw-transition-all tw-z-99">
+    <div class="header-fluid-container">
+      <nav class="d-flex align-items-center justify-content-between position-relative">
+        <!-- Far Left: K LABS Logo -->
+        <div class="header-three-logo">
+          <a href="index.html" class="d-inline-flex align-items-center">
+            <img src="assets/global/logo/kairon-logo.svg" alt="K LABS Logo" />
+          </a>
+        </div>
+
+        <!-- Center: 3 Social Icons (Instagram, WhatsApp, Gmail) in Navbar Center (Rounded Squares) -->
+        <div
+          class="header-social-center position-absolute start-50 translate-middle-x d-none d-md-flex align-items-center">
+          <a class="header-social-btn" href="https://www.instagram.com/zee_god._/" target="_blank" title="Instagram">
+            <i class="ph-bold ph-instagram-logo"></i>
+          </a>
+          <a class="header-social-btn" href="https://api.whatsapp.com/send/?phone=919679505092" target="_blank"
+            title="WhatsApp">
+            <i class="ph-bold ph-whatsapp-logo"></i>
+          </a>
+          <a class="header-social-btn" href="mailto:shivasardar967@gmail.com" title="Gmail / Email">
+            <i class="ph-bold ph-envelope"></i>
+          </a>
+        </div>
+
+        <!-- Far Right: LET'S TALK Button & Clean Lines-Only Hamburger Trigger -->
+        <div class="header-right d-flex align-items-center gap-3 gap-lg-4">
+          <div class="header-three-button d-none d-md-block">
+            <a class="tw-hover-btn btn-green-wipe lets-talk-trigger-link" href="lets-talk.html">
+              LET'S TALK
+            </a>
+          </div>
+
+          <div class="header-three-menu">
+            <button class="tw-offcanvas-open-btn header-hamburger-btn" aria-label="Open Navigation">
+              <i class="ph-bold ph-list"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- ==================== Act 01: ORIGIN (Hero Scene with Gradient Mesh & Depth) ==================== -->
+      <section class="section-origin" id="origin">
+        <!-- Full-Page Background for Page 1 (Origin / Hero) -->
+        <div class="section-full-bg">
+          <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/pages/page1/images/page1-bg.jpg" onerror="this.style.display='none'">
+            <source src="assets/pages/page1/videos/page1-bg.mp4" type="video/mp4"
+              onerror="this.parentElement.style.display='none'" />
+          </video>
+          <img class="section-full-bg-img" src="assets/pages/page1/images/page1-bg.jpg" alt="Page 1 Background"
+            onerror="this.style.display='none'" />
+          <div class="section-full-bg-overlay"></div>
+        </div>
+
+        <!-- Gradient Mesh Atmospheric Lighting -->
+        <div class="bg-gradient-mesh">
+          <div class="mesh-blob-1"></div>
+          <div class="mesh-blob-2"></div>
+        </div>
+
+        <canvas id="kairon-particles"></canvas>
+
+        <div class="custom-container position-relative z-1 w-100">
+          <div class="position-relative z-1">
+            <!-- Large Character Hero with Depth -->
+            <div class="banner-three-man" id="hero-character">
+              <img src="assets/pages/page1/images/banner-three-man.png" alt="Shiva - K Labs Director" />
+            </div>
+
+            <!-- Grand Editorial Display Headline "KAIRON" -->
+            <h1 class="hero-grand-title" id="hero-bg-title">
+              KAIRON
+            </h1>
+
+            <!-- Hero Bento Card Layer (Supports both Video and Image Backgrounds) -->
+            <div class="bento-grid mt-4 position-relative z-1">
+              <!-- Left Studio Card (Frame 1) -->
+              <div class="bento-span-4 hero-col-left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="hero-bento-card hero-card-bg-1">
+                  <!-- Background Video (Place your video in assets/pages/page1/videos/hero-frame-1.mp4 or change source) -->
+                  <video class="hero-card-video" autoplay muted loop playsinline preload="auto"
+                    poster="assets/pages/page1/images/hero-card-1.jpg">
+                    <source src="assets/pages/page1/videos/hero-frame-1.mp4" type="video/mp4" />
+                  </video>
+                  <div class="hero-card-overlay"></div>
+
+                  <div class="mb-2">
+                    <span class="studio-tag tag-accent mb-2">CREATIVE DIRECTION // 2026</span>
+                  </div>
+                  <h2 class="fs-4 fw-bold text-white mb-3">
+                    Hi, I'm Shiva.<br />
+                    Creative Technologist &amp; Motion Director.
+                  </h2>
+                  <ul class="list-unstyled d-flex flex-column gap-3 mb-0"
+                    style="font-size: 0.95rem; color: #ffffff; font-weight: 500;">
+                    <li class="d-flex align-items-center gap-2"><span
+                        style="width: 7px; height: 7px; border-radius: 50%; background: #00b85a; box-shadow: 0 0 8px rgba(0, 184, 90, 0.8);"></span>
+                      2D Animation
+                      &amp; Kinetic Motion</li>
+                    <li class="d-flex align-items-center gap-2"><span
+                        style="width: 7px; height: 7px; border-radius: 50%; background: #00b85a; box-shadow: 0 0 8px rgba(0, 184, 90, 0.8);"></span>
+                      3D World
+                      Building &amp; Modelling</li>
+                    <li class="d-flex align-items-center gap-2"><span
+                        style="width: 7px; height: 7px; border-radius: 50%; background: #00b85a; box-shadow: 0 0 8px rgba(0, 184, 90, 0.8);"></span>
+                      Cinematic VFX
+                      &amp; Compositing</li>
+                    <li class="d-flex align-items-center gap-2"><span
+                        style="width: 7px; height: 7px; border-radius: 50%; background: #00b85a; box-shadow: 0 0 8px rgba(0, 184, 90, 0.8);"></span>
+                      High-CTR
+                      Thumbnail Design Systems</li>
+                    <li class="d-flex align-items-center gap-2"><span
+                        style="width: 7px; height: 7px; border-radius: 50%; background: #00b85a; box-shadow: 0 0 8px rgba(0, 184, 90, 0.8);"></span>
+                      Creative Web
+                      &amp; App Engineering</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Center Statement Box (Frame 2) -->
+              <div class="bento-span-4 text-center hero-col-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="200">
+                <div class="hero-bento-card hero-bento-center hero-card-bg-2">
+                  <!-- Background Video (Place your video in assets/pages/page1/videos/hero-frame-2.mp4 or change source) -->
+                  <video class="hero-card-video" autoplay muted loop playsinline preload="auto"
+                    poster="assets/pages/page1/images/hero-card-2.jpg">
+                    <source src="assets/pages/page1/videos/hero-frame-2.mp4" type="video/mp4" />
+                  </video>
+                  <div class="hero-card-overlay"></div>
+
+                  <h3 class="fs-4 fw-bold text-white mb-3" style="letter-spacing: -0.02em;">
+                    Animation, VFX &amp; Digital Systems,<br />crafted frame by frame.
+                  </h3>
+                  <div class="d-flex justify-content-center">
+                    <a class="hero-scroll-indicator" href="#chapters" title="Explore Story" aria-label="Explore Story">
+                      <i class="ph-bold ph-caret-down"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Status Cards (Frames 3 & 4) -->
+              <div class="bento-span-4 hero-col-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="d-flex flex-column gap-3">
+                  <!-- Top Right Status Card (Frame 3) -->
+                  <div class="hero-bento-card hero-card-bg-3">
+                    <!-- Background Video (Place your video in assets/pages/page1/videos/hero-frame-3.mp4 or change source) -->
+                    <video class="hero-card-video" autoplay muted loop playsinline preload="auto"
+                      poster="assets/pages/page1/images/hero-card-3.jpg">
+                      <source src="assets/pages/page1/videos/hero-frame-3.mp4" type="video/mp4" />
+                    </video>
+                    <div class="hero-card-overlay"></div>
+
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="ph-bold ph-globe fs-5" style="color: #00b85a;"></i>
+                      <span class="text-white fw-bold font-heading text-uppercase"
+                        style="letter-spacing: 0.08em; font-size: 0.85rem;">GLOBAL COMMISSIONS</span>
+                    </div>
+                    <p class="text-white-50 fs-6 mb-0" style="line-height: 1.5;">Open for international brand
+                      partnerships, motion projects &amp; visual builds.</p>
+                  </div>
+
+                  <!-- Bottom Right DM Card (Frame 4) -->
+                  <div class="hero-bento-card hero-card-bg-4">
+                    <!-- Background Video (Place your video in assets/pages/page1/videos/hero-frame-4.mp4 or change source) -->
+                    <video class="hero-card-video" autoplay muted loop playsinline preload="auto"
+                      poster="assets/pages/page1/images/hero-card-4.jpg">
+                      <source src="assets/pages/page1/videos/hero-frame-4.mp4" type="video/mp4" />
+                    </video>
+                    <div class="hero-card-overlay"></div>
+
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="ph-bold ph-paper-plane-tilt fs-5" style="color: #00b85a;"></i>
+                      <span class="text-white-50 text-uppercase fw-bold"
+                        style="letter-spacing: 0.1em; font-size: 0.78rem;">LET'S CONNECT DM:</span>
+                    </div>
+                    <a class="hero-insta-link text-white fw-bold fs-5 text-decoration-none"
+                      href="https://www.instagram.com/zee_god._/" target="_blank">
+                      <i class="ph-bold ph-instagram-logo fs-4" style="color: #00b85a;"></i> @zee_god._
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Act 02: MANIFESTO (Philosophy with Spotlight Vignette) ==================== -->
+      <section class="section-manifesto bg-spotlight" id="philosophy">
+        <!-- Full-Page Background for Page 2 (Manifesto) -->
+        <div class="section-full-bg">
+          <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/pages/page2/images/page2-bg.jpg" onerror="this.style.display='none'">
+            <source src="assets/pages/page2/videos/page2-bg.mp4" type="video/mp4"
+              onerror="this.parentElement.style.display='none'" />
+          </video>
+          <img class="section-full-bg-img" src="assets/pages/page2/images/page2-bg.jpg" alt="Page 2 Background"
+            onerror="this.style.display='none'" />
+          <div class="section-full-bg-overlay"></div>
+        </div>
+        <div class="custom-container">
+          <div class="row justify-content-center">
+            <div class="col-xl-11">
+              <span class="chapter-number">02 // MANIFESTO</span>
+              <p class="manifesto-statement mb-0" id="manifesto-text">
+                Every frame is calculated with intention. Every dynamic curve is sculpted for emotion. Every line of
+                code exists to amplify cinematic storytelling. At K LABS, art and technology converge to create
+                unforgettable digital moments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Act 03: PERSONA & CATEGORIZED BENTO CAPABILITY MAP ==================== -->
+      <section class="section-persona" id="persona">
+        <!-- Full-Page Background for Page 3 (Persona & Capability) -->
+        <div class="section-full-bg">
+          <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/pages/page3/images/page3-bg.jpg" onerror="this.style.display='none'">
+            <source src="assets/pages/page3/videos/page3-bg.mp4" type="video/mp4"
+              onerror="this.parentElement.style.display='none'" />
+          </video>
+          <img class="section-full-bg-img" src="assets/pages/page3/images/page3-bg.jpg" alt="Page 3 Background"
+            onerror="this.style.display='none'" />
+          <div class="section-full-bg-overlay"></div>
+        </div>
+        <div class="custom-container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <span class="chapter-number">03 // PERSONA &amp; CAPABILITY MAP</span>
+            <h2 class="display-title" style="color: #090d16 !important;">Artistry Meets Technical Execution</h2>
+          </div>
+
+          <!-- Bento Row 1: Persona Photo & Studio Narrative -->
+          <div class="bento-grid align-items-center mb-4">
+            <div class="bento-span-5" data-aos="fade-up" data-aos-duration="1000">
+              <div class="persona-image-wrapper tw-clip-anim">
+                <img class="tw-anim-img w-100" data-animate="true" src="assets/pages/page3/images/about-three-thumb.png"
+                  alt="Shiva - K Labs Director" />
+              </div>
+            </div>
+
+            <div class="bento-span-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="glass-panel p-4 p-md-5">
+                <h3 class="fs-2 fw-bold mb-3 font-heading" style="color: #090d16 !important;">
+                  Operating across two worlds: motion dynamics and high-performance code.
+                </h3>
+                <p class="fs-5 mb-4" style="color: #475569 !important;">
+                  I'm Shiva, directing creative technology and motion at <strong style="color: #090d16 !important;">K
+                    LABS</strong>.
+                  Multi-disciplinary execution operating across 2D motion dynamics, 3D world creation, photorealistic
+                  VFX compositing, high-CTR YouTube covers, and full-stack software development.
+                </p>
+                <p class="fs-5 mb-4" style="color: #475569 !important;">
+                  Whether it's directing a kinetic 3D product showcase, compositing cinematic visual effects sequences,
+                  engineering viral thumbnail systems, or building interactive digital experiences — the outcome is
+                  always clear: relentless execution and world-class craft.
+                </p>
+
+                <div class="pt-2">
+                  <a class="tw-btn-circle text-decoration-none" href="lets-talk.html">
+                    <span>
+                      LET'S<br />TALK
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Row 2: 3D Perspective Skills & Capability Showcase with Floating Chrome Assets -->
+          <div class="mt-5" data-aos="fade-up">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-2">
+              <div>
+                <h4 class="text-uppercase fw-bold mb-1"
+                  style="letter-spacing: 0.12em; font-size: 0.85rem; color: #475569 !important;">
+                  03 // INTERACTIVE 3D SKILLS &amp; PRODUCTION CAPABILITY
+                </h4>
+                <p class="mb-0" style="font-size: 0.95rem; color: #64748b !important;">
+                  Drag horizontally or hover to explore disciplines in 3D perspective depth.
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge rounded-pill bg-white text-dark font-monospace px-3 py-2"
+                  style="font-size: 0.75rem; border: 1px solid rgba(15,23,42,0.15); box-shadow: 0 2px 6px rgba(15,23,42,0.04);">
+                  <i class="ph-bold ph-hand-pointing" style="color: #00b85a;"></i> DRAGGABLE 3D STAGE
+                </span>
+              </div>
+            </div>
+
+            <!-- 3D Cylindrical Orbit Stage -->
+            <div class="skills-3d-stage" id="skills3dStage"
+              aria-label="Interactive 3D cylindrical skills and tools carousel">
+              <div class="skills-3d-orbit-ring" id="skills3dOrbitRing">
+
+                <!-- Orbit Item 0: Frame 1 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="0">
+                  <article class="skill-3d-card" data-card-title="Frame 1">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-1.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-1.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-1.jpg"
+                        alt="Orbit Frame 1" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 1: Frame 2 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="1">
+                  <article class="skill-3d-card" data-card-title="Frame 2">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-2.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-2.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-2.jpg"
+                        alt="Orbit Frame 2" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 2: Frame 3 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="2">
+                  <article class="skill-3d-card" data-card-title="Frame 3">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-3.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-3.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-3.jpg"
+                        alt="Orbit Frame 3" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 3: Frame 4 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="3">
+                  <article class="skill-3d-card" data-card-title="Frame 4">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-4.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-4.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-4.jpg"
+                        alt="Orbit Frame 4" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 4: Frame 5 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="4">
+                  <article class="skill-3d-card" data-card-title="Frame 5">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-5.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-5.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-5.jpg"
+                        alt="Orbit Frame 5" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 5: Frame 6 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="5">
+                  <article class="skill-3d-card" data-card-title="Frame 6">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-6.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-6.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-6.jpg"
+                        alt="Orbit Frame 6" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 6: Frame 7 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="6">
+                  <article class="skill-3d-card" data-card-title="Frame 7">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-7.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-7.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-7.jpg"
+                        alt="Orbit Frame 7" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 7: Frame 8 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="7">
+                  <article class="skill-3d-card" data-card-title="Frame 8">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-8.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-8.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-8.jpg"
+                        alt="Orbit Frame 8" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 8: Frame 9 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="8">
+                  <article class="skill-3d-card" data-card-title="Frame 9">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-9.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-9.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-9.jpg"
+                        alt="Orbit Frame 9" />
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Orbit Item 9: Frame 10 -->
+                <div class="skills-3d-orbit-item" data-orbit-index="9">
+                  <article class="skill-3d-card" data-card-title="Frame 10">
+                    <div class="skill-card-media-container">
+                      <video class="skill-card-video" autoplay muted loop playsinline preload="auto"
+                        poster="assets/pages/page3/images/orbit-frame-10.jpg">
+                        <source src="assets/pages/page3/videos/orbit-frame-10.mp4" type="video/mp4" />
+                      </video>
+                      <img class="skill-card-img" src="assets/pages/page3/images/orbit-frame-10.jpg"
+                        alt="Orbit Frame 10" />
+                    </div>
+                  </article>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Production Arsenal Strip ==================== -->
+      <section class="kairon-tools-area">
+        <div class="custom-container">
+          <div class="d-flex align-items-center flex-wrap gap-4" data-aos="fade-up">
+            <span class="text-white-50 text-uppercase fw-bold"
+              style="letter-spacing: 0.12em; font-size: 0.85rem;">Equipped Arsenal</span>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="kairon-tool-chip">Blender 3D</span>
+              <span class="kairon-tool-chip">Cinema 4D</span>
+              <span class="kairon-tool-chip">After Effects</span>
+              <span class="kairon-tool-chip">Premiere Pro</span>
+              <span class="kairon-tool-chip">Photoshop</span>
+              <span class="kairon-tool-chip">Figma</span>
+              <span class="kairon-tool-chip">VS Code</span>
+              <span class="kairon-tool-chip">Next.js / React</span>
+              <span class="kairon-tool-chip">Three.js / WebGL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Dynamic Marquee ==================== -->
+      <div class="marquee py-4 bg-black border-top border-bottom border-white-10">
+        <div class="marquee_left d-flex align-items-center justify-content-between gap-5 overflow-hidden">
+          <div>
+            <h2 class="text-uppercase text-white fs-1 fw-bold mb-0 font-heading">K LABS —</h2>
+          </div>
+          <div>
+            <h2 class="text-uppercase text-white-50 fs-1 fw-bold mb-0 font-heading">2D / 3D MOTION —</h2>
+          </div>
+          <div>
+            <h2 class="text-uppercase text-white fs-1 fw-bold mb-0 font-heading">VFX &amp; COMPOSITING —</h2>
+          </div>
+          <div>
+            <h2 class="text-uppercase text-white-50 fs-1 fw-bold mb-0 font-heading">HIGH-CTR THUMBNAILS —</h2>
+          </div>
+          <div>
+            <h2 class="text-uppercase text-white fs-1 fw-bold mb-0 font-heading">WEB &amp; APP SYSTEMS —</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== Act 04: 5 CHAPTERS OF MASTERY (Asymmetric Bento Story Panels) ==================== -->
+      <section class="section-chapters" id="chapters">
+        <!-- Full-Page Background for Page 4 (5 Chapters of Mastery) -->
+        <div class="section-full-bg">
+          <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/pages/page4/images/page4-bg.jpg" onerror="this.style.display='none'">
+            <source src="assets/pages/page4/videos/page4-bg.mp4" type="video/mp4"
+              onerror="this.parentElement.style.display='none'" />
+          </video>
+          <img class="section-full-bg-img" src="assets/pages/page4/images/page4-bg.jpg" alt="Page 4 Background"
+            onerror="this.style.display='none'" />
+          <div class="section-full-bg-overlay"></div>
+        </div>
+        <div class="custom-container">
+          <div class="mb-5 text-center chapters-header-block">
+            <span class="chapter-number">04 // 5 CHAPTERS OF MASTERY</span>
+            <h2 class="display-title">The Director's Narrative</h2>
+            <p class="fs-5 mt-2"
+              style="color: #475569 !important; font-weight: 500; max-width: 680px; margin-left: auto; margin-right: auto;">
+              How each medium is engineered for maximum emotional and visual impact.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-4">
+
+            <!-- Chapter I: 2D Animation & Motion Graphics -->
+            <div class="chapter-bento-card">
+              <div class="bento-grid align-items-center">
+                <div class="bento-span-6">
+                  <span class="chapter-roman">CHAPTER I // KINETIC VELOCITY</span>
+                  <h3 class="chapter-title">2D Animation &amp; Motion Graphics</h3>
+                  <p class="chapter-desc">
+                    Captivating human attention in under 2 seconds. Frame-by-frame character dynamics, typographic
+                    velocity, and seamless visual hooks crafted to turn passive scrollers into hyper-engaged audiences.
+                  </p>
+                  <div class="portfolio-list mb-3">
+                    <ul class="d-flex gap-2 flex-wrap list-unstyled mb-0">
+                      <li><a href="#chapters">Kinetic Typography</a></li>
+                      <li><a href="#chapters">Character Rigging</a></li>
+                      <li><a href="#chapters">Explainer Reels</a></li>
+                      <li><a href="#chapters">After Effects Physics</a></li>
+                    </ul>
+                  </div>
+                  <div class="chapter-metrics-strip">
+                    <div>
+                      <div class="chapter-metric-val">60 FPS</div>
+                      <div class="chapter-metric-lbl">Frame Lock</div>
+                    </div>
+                    <div>
+                      <div class="chapter-metric-val">100%</div>
+                      <div class="chapter-metric-lbl">Custom Curves</div>
+                    </div>
+                    <div>
+                      <div class="chapter-metric-val">&lt; 1.5s</div>
+                      <div class="chapter-metric-lbl">Hook Velocity</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bento-span-6">
+                  <div class="chapter-thumb-wrap">
+                    <img src="assets/pages/page4/images/chapter-1.png" alt="2D Animation"
+                      onerror="if(this.src.indexOf('.png')!==-1){this.src=this.src.replace('.png','.jpg');}" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter II: 3D Animation & Modelling -->
+            <div class="chapter-bento-card">
+              <div class="bento-grid align-items-center flex-lg-row-reverse">
+                <div class="bento-span-6">
+                  <span class="chapter-roman">CHAPTER II // DIMENSIONAL SYNTHESIS</span>
+                  <h3 class="chapter-title">3D Animation &amp; Modelling</h3>
+                  <p class="chapter-desc">
+                    Sculpting photorealistic worlds from the void. Complex lighting physics, Octane shaders, futuristic
+                    product showcases, and kinetic camera choreography built in Blender and Cinema 4D.
+                  </p>
+                  <div class="portfolio-list mb-3">
+                    <ul class="d-flex gap-2 flex-wrap list-unstyled mb-0">
+                      <li><a href="#chapters">Product Teasers</a></li>
+                      <li><a href="#chapters">Cinema 4D</a></li>
+                      <li><a href="#chapters">Blender 3D</a></li>
+                      <li><a href="#chapters">Octane / Redshift</a></li>
+                    </ul>
+                  </div>
+                  <div class="chapter-metrics-strip">
+                    <div>
+                      <div class="chapter-metric-val">Photoreal</div>
+                      <div class="chapter-metric-lbl">Lighting Physics</div>
+                    </div>
+                    <div>
+                      <div class="chapter-metric-val">4K UHD</div>
+                      <div class="chapter-metric-lbl">Master Render Pass</div>
+                    </div>
+                    <div>
+                      <div class="chapter-metric-val">0-to-1</div>
+                      <div class="chapter-metric-lbl">Asset Fabrication</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bento-span-6">
+                  <div class="chapter-thumb-wrap">
+                    <img src="assets/pages/page4/images/chapter-2.png" alt="3D Animation"
+                      onerror="if(this.src.indexOf('.png')!==-1){this.src=this.src.replace('.png','.jpg');}" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter III: VFX & Compositing -->
+            <div class="chapter-bento-card">
+              <div class="bento-grid align-items-center">
+                <div class="bento-span-6">
+                  <span class="chapter-roman">CHAPTER III // REALITY WARP</span>
+                  <h3 class="chapter-title">Cinematic VFX &amp; Compositing</h3>
+                  <p class="chapter-desc">
+                    Seamlessly bending the laws of physics. 3D camera tracking, matchmoving, CGI element integration,
+                    particle dynamics, and cinematic color science that blurs the boundary between camera and digital
+                    reality.
+                  </p>
+                  <div class="portfolio-list mb-3">
+                    <ul class="d-flex gap-2 flex-wrap list-unstyled mb-0">
+                      <li><a href="#chapters">Camera Tracking</a></li>
+                      <li><a href="#chapters">Matchmoving</a></li>
+                      <li><a href="#chapters">CGI Pass</a></li>
+                      <li><a href="#chapters">Color Grading</a></li>
+                    </ul>
+                  </div>
+                  <div class="chapter-metrics-strip">
+                    <div>
+                      <div class="chapter-metric-val">Pixel-Track</div>
+                      <div class="chapter-metric-lbl">Camera Precision</div>
+                    </div>
+                    <div>
+                      <div class="chapter-metric-val">Multi-Pass</div>
+                      <div class="chapter-metric-lbl">Compositing Depth</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bento-span-6">
+                  <div class="chapter-thumb-wrap">
+                    <img src="assets/pages/page4/images/chapter-3.png" alt="VFX Compositing"
+                      onerror="if(this.src.indexOf('.png')!==-1){this.src=this.src.replace('.png','.jpg');}" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter IV: High-CTR Thumbnail Design -->
+            <div class="chapter-bento-card">
+              <div class="bento-grid align-items-center flex-lg-row-reverse">
+                <div class="bento-span-6">
+                  <span class="chapter-roman">CHAPTER IV // THE SCIENCE OF THE CLICK</span>
+                  <h3 class="chapter-title">High-CTR Thumbnail Design Systems</h3>
+                  <p class="chapter-desc">
+                    Psychology-backed visual hooks for YouTube, podcasts, and global brand campaigns. Custom 3D
+                    compositing, lighting manipulation, and expressive typography designed to consistently outperform
+                    platform benchmarks.
+                  </p>
+                  <div class="portfolio-list mb-3">
+                    <ul class="d-flex gap-2 flex-wrap list-unstyled mb-0">
+                      <li><a href="#chapters">Viral CTR Strategy</a></li>
+                      <li><a href="#chapters">Photoshop Compositing</a></li>
+                      <li><a href="#chapters">Lighting &amp; Mood</a></li>
+                      <li><a href="#chapters">Visual Hooks</a></li>
+                    </ul>
+                  </div>
+                  <div class="chapter-metrics-strip">
+                    <div>
+                      <div class="chapter-metric-val">+200%</div>
+                      <div class="chapter-metric-lbl">Average CTR Lift</div>
+                    </div>
+                    <div>
+                      <div class="chapter-metric-val">10M+</div>
+                      <div class="chapter-metric-lbl">Organic Views Driven</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bento-span-6">
+                  <div class="chapter-thumb-wrap">
+                    <img src="assets/pages/page4/images/chapter-4.png" alt="High-CTR Thumbnails"
+                      onerror="if(this.src.indexOf('.png')!==-1){this.src=this.src.replace('.png','.jpg');}" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter V: Web & App Development -->
+            <div class="chapter-bento-card">
+              <div class="bento-grid align-items-center">
+                <div class="bento-span-6">
+                  <span class="chapter-roman">CHAPTER V // THE DIGITAL SPINE</span>
+                  <h3 class="chapter-title">Creative Web &amp; App Engineering</h3>
+                  <p class="chapter-desc">
+                    Next-generation interactive web platforms. Interactive micro-animations, glassmorphic UI/UX systems,
+                    WebGL motion, and high-performance full-stack architectures engineered for scale.
+                  </p>
+                  <div class="portfolio-list mb-3">
+                    <ul class="d-flex gap-2 flex-wrap list-unstyled mb-0">
+                      <li><a href="#chapters">Full-Stack Builds</a></li>
+                      <li><a href="#chapters">Next.js / React</a></li>
+                      <li><a href="#chapters">Interactive UI/UX</a></li>
+                      <li><a href="#chapters">WebGL / Three.js</a></li>
+                    </ul>
+                  </div>
+                  <div class="chapter-metrics-strip">
+                    <div>
+                      <div class="chapter-metric-val">&lt; 100ms</div>
+                      <div class="chapter-metric-lbl">Interaction Latency</div>
+                    </div>
+                    <div>
+                      <div class="chapter-metric-val">100/100</div>
+                      <div class="chapter-metric-lbl">Performance Polish</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bento-span-6">
+                  <div class="chapter-thumb-wrap">
+                    <img src="assets/pages/page4/images/chapter-5.png" alt="Web &amp; App Engineering"
+                      onerror="if(this.src.indexOf('.png')!==-1){this.src=this.src.replace('.png','.jpg');}" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Act 05: THE VAULT (Curated Alternating Case Studies) ==================== -->
+      <section class="section-vault" id="vault">
+        <!-- Full-Page Background for Page 5 (The Vault) -->
+        <div class="section-full-bg">
+          <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/pages/page5/images/page5-bg.jpg" onerror="this.style.display='none'">
+            <source src="assets/pages/page5/videos/page5-bg.mp4" type="video/mp4"
+              onerror="this.parentElement.style.display='none'" />
+          </video>
+          <img class="section-full-bg-img" src="assets/pages/page5/images/page5-bg.jpg" alt="Page 5 Background"
+            onerror="this.style.display='none'" />
+          <div class="section-full-bg-overlay"></div>
+        </div>
+        <!-- GSAP Pinned Background Typography Shape -->
+        <div class="position-absolute top-0 z-n1 w-100 text-center">
+          <h3 class="vault-pinned-title">WORKS</h3>
+        </div>
+
+        <div class="custom-container position-relative z-1">
+          <div class="row mb-5 align-items-end vault-header-row">
+            <div class="col-lg-8 vault-title-block">
+              <span class="chapter-number">05 // THE VAULT</span>
+              <h2 class="display-title">Selected Visuals &amp; Builds</h2>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0 vault-btn-block">
+              <a href="https://www.instagram.com/zee_god._/" target="_blank"
+                class="tw-hover-btn btn-green-wipe d-inline-flex align-items-center gap-2 text-decoration-none vault-insta-btn">
+                <i class="ph-bold ph-instagram-logo"></i> FOLLOW ON INSTAGRAM
+              </a>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <!-- Item 1: 3D Reel (Slides in from LEFT) -->
+            <div class="bento-span-6 vault-card-item vault-card-left">
+              <div class="case-study-card h-100">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <h4 class="fs-3 fw-bold mb-2">
+                      <a href="https://www.instagram.com/zee_god._/" target="_blank"
+                        class="case-study-title-link text-decoration-none">3D Modelling &amp; Animation Showcase</a>
+                    </h4>
+                    <div class="portfolio-list">
+                      <ul class="d-flex gap-2 list-unstyled mb-0">
+                        <li><a href="https://www.instagram.com/zee_god._/" target="_blank">3D MODELLING</a></li>
+                        <li><a href="https://www.instagram.com/zee_god._/" target="_blank">OCTANE</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="https://www.instagram.com/zee_god._/" target="_blank" class="case-study-arrow-btn">
+                    <i class="ph ph-arrow-up-right"></i>
+                  </a>
+                </div>
+                <div class="case-thumb not-hide-cursor" data-cursor="View">
+                  <a href="https://www.instagram.com/zee_god._/" target="_blank">
+                    <!-- Background Video (Supports assets/pages/page5/videos/vault-1.mp4 or assets/videos/vault-1.mp4) -->
+                    <video class="case-thumb-video" autoplay muted loop playsinline preload="auto"
+                      poster="assets/pages/page5/images/vault-1.jpg">
+                      <source src="assets/pages/page5/videos/vault-1.mp4" type="video/mp4" />
+                    </video>
+                    <!-- Base / Fallback Image -->
+                    <img class="case-thumb-img w-100" src="assets/pages/page5/images/vault-1.jpg" alt="3D Showcase"
+                      onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: 2D Animation Reel (Slides in from RIGHT) -->
+            <div class="bento-span-6 vault-card-item vault-card-right">
+              <div class="case-study-card h-100">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <h4 class="fs-3 fw-bold mb-2">
+                      <a href="https://www.instagram.com/zee_god._/" target="_blank"
+                        class="case-study-title-link text-decoration-none">2D Motion &amp; Kinetic Dynamics</a>
+                    </h4>
+                    <div class="portfolio-list">
+                      <ul class="d-flex gap-2 list-unstyled mb-0">
+                        <li><a href="https://www.instagram.com/zee_god._/" target="_blank">2D ANIMATION</a></li>
+                        <li><a href="https://www.instagram.com/zee_god._/" target="_blank">KINETIC</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="https://www.instagram.com/zee_god._/" target="_blank" class="case-study-arrow-btn">
+                    <i class="ph ph-arrow-up-right"></i>
+                  </a>
+                </div>
+                <div class="case-thumb not-hide-cursor" data-cursor="View">
+                  <a href="https://www.instagram.com/zee_god._/" target="_blank">
+                    <!-- Background Video (Supports assets/pages/page5/videos/vault-2.mp4 or assets/videos/vault-2.mp4) -->
+                    <video class="case-thumb-video" autoplay muted loop playsinline preload="auto"
+                      poster="assets/pages/page5/images/vault-2.jpg">
+                      <source src="assets/pages/page5/videos/vault-2.mp4" type="video/mp4" />
+                    </video>
+                    <!-- Base / Fallback Image -->
+                    <img class="case-thumb-img w-100" src="assets/pages/page5/images/vault-2.jpg" alt="2D Animation Reel"
+                      onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: VFX Breakdown (Slides in from LEFT) -->
+            <div class="bento-span-6 vault-card-item vault-card-left">
+              <div class="case-study-card h-100">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <h4 class="fs-3 fw-bold mb-2">
+                      <a href="https://www.instagram.com/zee_god._/" target="_blank"
+                        class="case-study-title-link text-decoration-none">VFX &amp; Compositing Breakdown</a>
+                    </h4>
+                    <div class="portfolio-list">
+                      <ul class="d-flex gap-2 list-unstyled mb-0">
+                        <li><a href="https://www.instagram.com/zee_god._/" target="_blank">VFX</a></li>
+                        <li><a href="https://www.instagram.com/zee_god._/" target="_blank">COMPOSITING</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="https://www.instagram.com/zee_god._/" target="_blank" class="case-study-arrow-btn">
+                    <i class="ph ph-arrow-up-right"></i>
+                  </a>
+                </div>
+                <div class="case-thumb not-hide-cursor" data-cursor="View">
+                  <a href="https://www.instagram.com/zee_god._/" target="_blank">
+                    <!-- Background Video (Supports assets/pages/page5/videos/vault-3.mp4 or assets/videos/vault-3.mp4) -->
+                    <video class="case-thumb-video" autoplay muted loop playsinline preload="auto"
+                      poster="assets/pages/page5/images/vault-3.jpg">
+                      <source src="assets/pages/page5/videos/vault-3.mp4" type="video/mp4" />
+                    </video>
+                    <!-- Base / Fallback Image -->
+                    <img class="case-thumb-img w-100" src="assets/pages/page5/images/vault-3.jpg" alt="VFX Breakdown"
+                      onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: Web & App Systems (Slides in from RIGHT) -->
+            <div class="bento-span-6 vault-card-item vault-card-right">
+              <div class="case-study-card h-100">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <h4 class="fs-3 fw-bold mb-2">
+                      <a href="lets-talk.html" class="case-study-title-link text-decoration-none">Interactive Web &amp;
+                        Digital
+                        Systems</a>
+                    </h4>
+                    <div class="portfolio-list">
+                      <ul class="d-flex gap-2 list-unstyled mb-0">
+                        <li><a href="lets-talk.html">WEB PLATFORMS</a></li>
+                        <li><a href="lets-talk.html">APP DEV</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="lets-talk.html" class="case-study-arrow-btn">
+                    <i class="ph ph-arrow-up-right"></i>
+                  </a>
+                </div>
+                <div class="case-thumb not-hide-cursor" data-cursor="View">
+                  <a href="lets-talk.html">
+                    <!-- Background Video (Supports assets/pages/page5/videos/vault-4.mp4 or assets/videos/vault-4.mp4) -->
+                    <video class="case-thumb-video" autoplay muted loop playsinline preload="auto"
+                      poster="assets/pages/page5/images/vault-4.jpg">
+                      <source src="assets/pages/page5/videos/vault-4.mp4" type="video/mp4" />
+                    </video>
+                    <!-- Base / Fallback Image -->
+                    <img class="case-thumb-img w-100" src="assets/pages/page5/images/vault-4.jpg" alt="Web and App Builds"
+                      onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Act 06: BLUEPRINT (Architectural Grid Background & Timeline) ==================== -->
+      <section class="section-blueprint bg-blueprint-grid" id="blueprint">
+        <!-- Full-Page Background for Page 6 (Blueprint Timeline) -->
+        <div class="section-full-bg">
+          <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/pages/page6/images/page6-bg.jpg" onerror="this.style.display='none'">
+            <source src="assets/pages/page6/videos/page6-bg.mp4" type="video/mp4"
+              onerror="this.parentElement.style.display='none'" />
+          </video>
+          <img class="section-full-bg-img" src="assets/pages/page6/images/page6-bg.jpg" alt="Page 6 Background"
+            onerror="this.style.display='none'" />
+          <div class="section-full-bg-overlay"></div>
+        </div>
+        <div class="custom-container">
+          <div class="row justify-content-center text-center mb-5 blueprint-header-row">
+            <div class="col-xl-9">
+              <span class="chapter-number blueprint-chapter-badge d-inline-block mb-3">06 // BLUEPRINT</span>
+              <h2 class="display-title blueprint-heading-text" id="blueprint-heading">
+                <span class="blueprint-line-mask">
+                  <span class="blueprint-line">How Every Commission Progresses,</span>
+                </span>
+                <span class="blueprint-line-mask">
+                  <span class="blueprint-line">From Concept To Master Export.</span>
+                </span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="bento-grid blueprint-timeline-wrapper">
+            <div class="bento-span-3 blueprint-col-item">
+              <div class="blueprint-step-card">
+                <!-- Background Image (Replace in assets/pages/page6/images/blueprint-1.jpg) -->
+                <img class="blueprint-card-bg-img" src="assets/pages/page6/images/blueprint-1.jpg" alt="Brief & Scope"
+                  onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                <div class="blueprint-card-overlay"></div>
+                <div class="blueprint-card-content position-relative z-1">
+                  <div class="blueprint-step-num">01</div>
+                  <h4 class="fs-4 fw-bold text-white mb-2 font-heading">Brief &amp; Scope</h4>
+                  <p class="text-white-50 mb-0">We align on goals, references, timelines, and technical requirements to
+                    define a razor-sharp scope.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bento-span-3 blueprint-col-item">
+              <div class="blueprint-step-card">
+                <!-- Background Image (Replace in assets/pages/page6/images/blueprint-2.jpg) -->
+                <img class="blueprint-card-bg-img" src="assets/pages/page6/images/blueprint-2.jpg"
+                  alt="Concept & Styleframe"
+                  onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                <div class="blueprint-card-overlay"></div>
+                <div class="blueprint-card-content position-relative z-1">
+                  <div class="blueprint-step-num">02</div>
+                  <h4 class="fs-4 fw-bold text-white mb-2 font-heading">Concept &amp; Styleframe</h4>
+                  <p class="text-white-50 mb-0">Rough sketches, 3D style frames, or UI prototypes to lock in artistic
+                    direction before heavy production.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bento-span-3 blueprint-col-item">
+              <div class="blueprint-step-card">
+                <!-- Background Image (Replace in assets/pages/page6/images/blueprint-3.jpg) -->
+                <img class="blueprint-card-bg-img" src="assets/pages/page6/images/blueprint-3.jpg"
+                  alt="Production & Motion"
+                  onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                <div class="blueprint-card-overlay"></div>
+                <div class="blueprint-card-content position-relative z-1">
+                  <div class="blueprint-step-num">03</div>
+                  <h4 class="fs-4 fw-bold text-white mb-2 font-heading">Production &amp; Motion</h4>
+                  <p class="text-white-50 mb-0">The core animation, modelling, VFX compositing, or frontend engineering
+                    with milestone updates.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bento-span-3 blueprint-col-item">
+              <div class="blueprint-step-card">
+                <!-- Background Image (Replace in assets/pages/page6/images/blueprint-4.jpg) -->
+                <img class="blueprint-card-bg-img" src="assets/pages/page6/images/blueprint-4.jpg"
+                  alt="Delivery & Master Files"
+                  onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                <div class="blueprint-card-overlay"></div>
+                <div class="blueprint-card-content position-relative z-1">
+                  <div class="blueprint-step-num">04</div>
+                  <h4 class="fs-4 fw-bold text-white mb-2 font-heading">Delivery &amp; Master Files</h4>
+                  <p class="text-white-50 mb-0">Final renders, source files, and web deployments provided in
+                    ready-to-scale international formats.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Act 07: INITIATE (Direct Studio Transmission & Footer) ==================== -->
+      <footer class="section-initiate" id="initiate">
+        <!-- Full-Page Background for Page 7 (Initiate Transmission) -->
+        <div class="section-full-bg">
+          <video class="section-full-bg-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/pages/page7/images/page7-bg.jpg" onerror="this.style.display='none'">
+            <source src="assets/pages/page7/videos/page7-bg.mp4" type="video/mp4"
+              onerror="this.parentElement.style.display='none'" />
+          </video>
+          <img class="section-full-bg-img" src="assets/pages/page7/images/page7-bg.jpg" alt="Page 7 Background"
+            onerror="this.style.display='none'" />
+          <div class="section-full-bg-overlay"></div>
+        </div>
+        <div class="custom-container">
+          <div class="bento-grid justify-content-between pb-5 initiate-grid-wrapper align-items-center">
+            <div class="bento-span-5 initiate-left-col">
+              <div class="mb-4">
+                <span class="chapter-number">07 // INITIATE TRANSMISSION</span>
+                <h2 class="display-title">
+                  Let’s build something bold together.
+                </h2>
+                <p class="text-white-50 fs-6 mt-3 mb-0" style="line-height: 1.6;">
+                  From standalone 3D hero assets to full-scale visual identities and high-converting creative systems.
+                  Shiva brings production-grade velocity to ambitious creators and brands worldwide.
+                </p>
+              </div>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <a class="text-white fs-5 fw-medium text-decoration-none d-flex align-items-center"
+                  href="mailto:shivasardar967@gmail.com">
+                  <i class="ph-bold ph-envelope me-2" style="color: var(--accent);"></i> shivasardar967@gmail.com
+                </a>
+                <a class="text-white fs-5 fw-medium text-decoration-none d-flex align-items-center"
+                  href="tel:+919679505092">
+                  <i class="ph-bold ph-phone-call me-2" style="color: var(--accent);"></i> +91 96795 XXXXX
+                </a>
+                <a class="text-white fs-5 fw-medium text-decoration-none d-flex align-items-center"
+                  href="https://www.instagram.com/zee_god._/" target="_blank">
+                  <i class="ph-bold ph-instagram-logo me-2" style="color: var(--accent);"></i> @zee_god._
+                </a>
+              </div>
+
+              <div class="pt-1">
+                <a class="tw-hover-btn btn-green-wipe d-inline-flex align-items-center gap-2"
+                  href="https://api.whatsapp.com/send/?phone=919679505092" target="_blank">
+                  <i class="ph-bold ph-whatsapp-logo fs-5"></i> QUICK CHAT ON WHATSAPP
+                </a>
+              </div>
+            </div>
+
+            <div class="bento-span-7 initiate-right-col">
+              <!-- Layer 1: Peeking Head & Expressive Eyes (BEHIND the Frame Top Edge) -->
+              <div class="peeking-mascot-head-wrapper" id="peekingMascotHead" aria-hidden="true">
+                <svg class="peeking-mascot-svg" viewBox="0 0 200 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="mascotHeadGroup">
+                    <!-- Stylized Ash-Charcoal Head Dome -->
+                    <path id="mascotHead" d="M 18,95 C 18,10 182,10 182,95 Z" fill="#1c2331" stroke="#090d16"
+                      stroke-width="4.5" />
+                    <!-- Inner Ash Highlight Arc -->
+                    <path d="M 34,90 C 34,26 166,26 166,90" stroke="rgba(255, 255, 255, 0.3)" stroke-width="3"
+                      stroke-linecap="round" fill="none" />
+
+                    <!-- Left Eyebrow (Dark Bold Black) -->
+                    <path id="mascotBrowL" d="M 38,24 Q 60,13 82,23" stroke="#090d16" stroke-width="7.5"
+                      stroke-linecap="round" fill="none" />
+                    <!-- Right Eyebrow (Dark Bold Black) -->
+                    <path id="mascotBrowR" d="M 118,23 Q 140,13 162,24" stroke="#090d16" stroke-width="7.5"
+                      stroke-linecap="round" fill="none" />
+
+                    <!-- Left Eye Group -->
+                    <g id="mascotEyeGroupL" class="mascot-eye-group">
+                      <ellipse id="mascotEyeL" cx="64" cy="54" rx="26" ry="32" fill="#ffffff" stroke="#090d16"
+                        stroke-width="4.5" />
+                      <g id="mascotPupilL">
+                        <circle cx="64" cy="56" r="13" fill="#090d16" />
+                        <circle cx="60" cy="51" r="4.5" fill="#ffffff" />
+                        <circle cx="69" cy="61" r="2" fill="#ffffff" />
+                      </g>
+                    </g>
+
+                    <!-- Right Eye Group -->
+                    <g id="mascotEyeGroupR" class="mascot-eye-group">
+                      <ellipse id="mascotEyeR" cx="136" cy="54" rx="26" ry="32" fill="#ffffff" stroke="#090d16"
+                        stroke-width="4.5" />
+                      <g id="mascotPupilR">
+                        <circle cx="136" cy="56" r="13" fill="#090d16" />
+                        <circle cx="132" cy="51" r="4.5" fill="#ffffff" />
+                        <circle cx="141" cy="61" r="2" fill="#ffffff" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Main Terminal Card Frame -->
+              <div class="glass-panel initiate-form initiate-terminal-panel position-relative overflow-hidden">
+                <!-- Layer 2: Gripping Hands / Paws (ON TOP OF the Frame Top Edge) -->
+                <div class="peeking-mascot-hands-wrapper" id="peekingMascotHands" aria-hidden="true">
+                  <svg class="peeking-mascot-svg" viewBox="0 0 240 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left Hand Gripping Over Top Rim -->
+                    <g id="mascotHandL" fill="#ffffff" stroke="#090d16" stroke-width="3.5" stroke-linejoin="round">
+                      <path d="M 22,0 C 22,17 32,17 32,0 Z" />
+                      <path d="M 32,-2 C 32,19 43,19 43,-2 Z" />
+                      <path d="M 43,-1 C 43,18 54,18 54,-1 Z" />
+                      <path d="M 54,2 C 54,16 64,16 64,2 Z" />
+                    </g>
+                    <!-- Right Hand Gripping Over Top Rim -->
+                    <g id="mascotHandR" fill="#ffffff" stroke="#090d16" stroke-width="3.5" stroke-linejoin="round">
+                      <path d="M 176,2 C 176,16 186,16 186,2 Z" />
+                      <path d="M 186,-1 C 186,18 197,18 197,-1 Z" />
+                      <path d="M 197,-2 C 197,19 208,19 208,-2 Z" />
+                      <path d="M 208,0 C 208,17 218,17 218,0 Z" />
+                    </g>
+                  </svg>
+                </div>
+                <!-- Big Frame Background Image -->
+                <img class="initiate-card-bg-img" src="assets/pages/page7/images/initiate-card.jpg"
+                  alt="Initiate Frame Background"
+                  onerror="if(this.src.indexOf('.jpg')!==-1){this.src=this.src.replace('.jpg','.png');}" />
+                <div class="initiate-card-overlay"></div>
+
+                <div class="position-relative z-1">
+                  <!-- Live Radar Status Bar (Two Independent Floating Capsules) -->
+                  <div class="terminal-top-row">
+                    <div class="status-badge-live">
+                      <span class="status-pulse-dot"></span>
+                      <span>STUDIO RADAR // ONLINE</span>
+                    </div>
+                    <div class="status-meta-pill">COMMISSIONS OPEN • 2026</div>
+                  </div>
+
+                  <!-- Terminal Heading & Mission -->
+                  <h3 class="text-white fs-3 fw-bold font-heading mb-2">READY TO BUILD SOMETHING ICONIC?</h3>
+                  <p class="terminal-mission-subtitle mb-4" style="color: #00e676 !important; font-family: var(--font-body), sans-serif !important; font-size: 1rem !important; font-weight: 700 !important; line-height: 1.6; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 12px rgba(0, 230, 118, 0.4) !important;">
+                    Select your creative disciplines below to lock a production slot in Shiva’s 2026 studio roster.
+                  </p>
+
+                  <!-- 1. Interactive Creative Discipline Selector -->
+                  <div class="mb-4">
+                    <label class="terminal-section-label mb-2 d-block" style="color: #ffffff !important; font-family: var(--font-body), sans-serif !important; font-weight: 800 !important; font-size: 0.96rem !important; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95) !important;">
+                      Select Creative Disciplines <span class="terminal-config-hint ms-1" style="color: #00e676 !important; font-family: var(--font-body), sans-serif !important; font-weight: 700 !important; font-size: 0.88rem !important; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 230, 118, 0.4) !important;">(Click to configure)</span>
+                    </label>
+                    <div class="d-flex flex-wrap gap-2" id="page7StyleChips">
+                      <span class="kairon-tool-chip is-active" data-val="2D Animation & Motion">2D Motion &amp;
+                        Kinetic</span>
+                      <span class="kairon-tool-chip" data-val="3D Animation & Modelling">3D CGI &amp; Octane</span>
+                      <span class="kairon-tool-chip" data-val="VFX & Compositing">VFX &amp; Compositing</span>
+                      <span class="kairon-tool-chip" data-val="High-CTR Thumbnail Design">Viral YouTube / CTR</span>
+                      <span class="kairon-tool-chip" data-val="Web & App Engineering">Web &amp; App Systems</span>
+                      <span class="kairon-tool-chip" data-val="AI & Automation Systems">AI &amp; Automations</span>
+                    </div>
+                  </div>
+
+                  <!-- Primary Mega CTA Action Button -->
+                  <button type="button" id="btnPage7Transmit"
+                    class="tw-hover-btn btn-green-wipe w-100 justify-content-center initiate-mega-cta mb-1 font-heading">
+                    <i class="ph-bold ph-lightning me-2"></i> INITIATE COMMISSION // LET’S TALK ➔
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Bottom Big Title -->
+          <div class="text-center py-4 border-top border-white-10 mt-5">
+            <h5 class="footer-grand-watermark">KAIRON</h5>
+            <p class="text-white-50 mt-3 mb-0">© 2026 KAIRON Studio. 2D/3D Animation, VFX &amp; Digital Systems.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Jquery js -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!-- Phosphor Icon js -->
+  <script src="assets/js/phosphor-icon.js"></script>
+  <!-- Bootstrap Bundle Js -->
+  <script src="assets/js/boostrap.bundle.min.js"></script>
+  <!-- aos -->
+  <script src="assets/js/aos.js"></script>
+  <!-- Magnific popup js -->
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <!-- Marquee -->
+  <script src="assets/js/jquery.marquee.min.js"></script>
+  <!-- Purecounter js -->
+  <script src="assets/js/purecounter.js"></script>
+  <!-- Swiper bundle js -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!-- GSAP suite -->
+  <script src="assets/js/gsap/gsap.js"></script>
+  <script src="assets/js/gsap/gsap-scroll-to-plugin.js"></script>
+  <script src="assets/js/gsap/gsap-scroll-smoother.js"></script>
+  <script src="assets/js/gsap/gsap-scroll-trigger.js"></script>
+  <script src="assets/js/gsap/gsap-split-text.js"></script>
+  <script src="assets/js/gsap/chroma.min.js"></script>
+
+  <!-- Custom GSAP scripts -->
+  <script src="assets/js/slider-active.js"></script>
+  <script src="assets/js/custom-gsap.js"></script>
+  <!-- Main js -->
+  <script src="assets/js/main.js"></script>
+  <!-- Cursor js -->
+  <script src="assets/js/tw-cursor.js"></script>
+  <!-- K Labs Ambient Starlight Particles -->
+  <script src="assets/js/kairon-particles.js"></script>
+
+  <!-- 2026 Scrollytelling & 3D Camera Depth Engine -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // 1. Hero 3D Camera Depth Zoom Scrub
+        const heroBg = document.getElementById('hero-bg-title');
+        const heroChar = document.getElementById('hero-character');
+        if (heroBg && heroChar) {
+          gsap.to(heroBg, {
+            y: -100,
+            scale: 0.8,
+            opacity: 0.45,
+            scrollTrigger: {
+              trigger: '#origin',
+              start: 'top top',
+              end: 'bottom top',
+              scrub: 1.2
+            }
+          });
+
+          gsap.to(heroChar, {
+            y: -50,
+            scale: 1.06,
+            transformOrigin: 'center center',
+            scrollTrigger: {
+              trigger: '#origin',
+              start: 'top top',
+              end: 'bottom top',
+              scrub: 1.4
+            }
+          });
+        }
+
+        // 1b. Hero Character Interactive 3D Physics Drag & Zero-G Floating Engine
+        const heroImg = document.querySelector('#hero-character img');
+        if (heroImg) {
+          let isHeroDragging = false;
+          let heroStartPointerX = 0;
+          let heroStartPointerY = 0;
+          let heroCurX = 0;
+          let heroCurY = 0;
+          let heroFloatTween = null;
+
+          function startHeroFloat() {
+            if (heroFloatTween) heroFloatTween.kill();
+            heroFloatTween = gsap.to(heroImg, {
+              y: '-=10',
+              rotationZ: 0.5,
+              rotationX: 0.8,
+              duration: 3.5,
+              ease: 'sine.inOut',
+              yoyo: true,
+              repeat: -1
+            });
+          }
+
+          startHeroFloat();
+
+          heroImg.addEventListener('pointerdown', function (e) {
+            isHeroDragging = true;
+            heroImg.classList.add('is-dragging');
+
+            if (heroFloatTween) heroFloatTween.pause();
+            gsap.killTweensOf(heroImg);
+
+            heroStartPointerX = e.clientX - heroCurX;
+            heroStartPointerY = e.clientY - heroCurY;
+
+            if (heroImg.setPointerCapture) {
+              try { heroImg.setPointerCapture(e.pointerId); } catch (err) { }
+            }
+          });
+
+          window.addEventListener('pointermove', function (e) {
+            if (!isHeroDragging) return;
+
+            const rawX = e.clientX - heroStartPointerX;
+            const rawY = e.clientY - heroStartPointerY;
+
+            // Clamped magnetic drag boundary (Max X: ±110px, Max Y: ±80px)
+            const maxBoundX = 110;
+            const maxBoundY = 80;
+
+            function applyRubberBand(val, max) {
+              if (Math.abs(val) <= max) return val;
+              const excess = Math.abs(val) - max;
+              const damped = max + Math.tanh(excess / 120) * 35;
+              return val < 0 ? -damped : damped;
+            }
+
+            heroCurX = applyRubberBand(rawX, maxBoundX);
+            heroCurY = applyRubberBand(rawY, maxBoundY);
+
+            // 3D Tilt calculation based on constrained displacement
+            const tiltX = Math.max(-12, Math.min(12, -heroCurY * 0.07));
+            const tiltY = Math.max(-12, Math.min(12, heroCurX * 0.07));
+            const tiltZ = Math.max(-7, Math.min(7, heroCurX * 0.03));
+
+            gsap.set(heroImg, {
+              x: heroCurX,
+              y: heroCurY,
+              rotationX: tiltX,
+              rotationY: tiltY,
+              rotationZ: tiltZ,
+              scale: 1.03
+            });
+          });
+
+          function onHeroPointerUp(e) {
+            if (!isHeroDragging) return;
+            isHeroDragging = false;
+            heroImg.classList.remove('is-dragging');
+
+            if (heroImg.releasePointerCapture) {
+              try { heroImg.releasePointerCapture(e.pointerId); } catch (err) { }
+            }
+
+            // Visible Elastic Spring Bounce Back to Home Position
+            gsap.to(heroImg, {
+              x: 0,
+              y: 0,
+              rotationX: 0,
+              rotationY: 0,
+              rotationZ: 0,
+              scale: 1,
+              duration: 1.1,
+              ease: 'back.out(2)',
+              onComplete: function () {
+                heroCurX = 0;
+                heroCurY = 0;
+                startHeroFloat();
+              }
+            });
+          }
+
+          window.addEventListener('pointerup', onHeroPointerUp);
+          window.addEventListener('pointercancel', onHeroPointerUp);
+        }
+
+        // 2. Manifesto Kinetic Word-By-Word Reveal
+        const manifesto = document.getElementById('manifesto-text');
+        if (manifesto && typeof SplitText !== 'undefined') {
+          const split = new SplitText(manifesto, { type: 'words' });
+          gsap.from(split.words, {
+            opacity: 0.15,
+            stagger: 0.08,
+            scrollTrigger: {
+              trigger: manifesto,
+              start: 'top 80%',
+              end: 'bottom 40%',
+              scrub: 0.8
+            }
+          });
+        }
+
+        // 3. 5 Chapters Left-Right Fly-In / Center Focus Spotlight / Fly-Out Stacking Engine
+        const chapterCards = document.querySelectorAll('.chapter-bento-card');
+        chapterCards.forEach((card, index) => {
+          const isFromRight = index % 2 === 1; // 0:Left, 1:Right, 2:Left, 3:Right, 4:Left
+          const startX = isFromRight ? 150 : -150;
+
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 95%',    // Starts entry from bottom
+              end: 'bottom 10%',   // Completes exit at top
+              scrub: 0.8
+            }
+          });
+
+          // Stage 1: Entry from Side + Bottom + Smaller (0.88) -> Center Active Spotlight (Scale 1.0, Opacity 1.0, X 0, Y 0)
+          tl.fromTo(card,
+            {
+              x: startX,
+              y: 80,
+              scale: 0.88,
+              opacity: 0.25
+            },
+            {
+              x: 0,
+              y: 0,
+              scale: 1,
+              opacity: 1,
+              duration: 1,
+              ease: 'power2.out'
+            }
+          )
+            // Stage 2: Center Highlight Zone (Crisp, 100% Focused, Zero Blur)
+            .to(card, {
+              x: 0,
+              y: 0,
+              scale: 1,
+              opacity: 1,
+              duration: 0.9
+            })
+            // Stage 3: Exit towards Top + Shrinks down + Slides back towards its side
+            .to(card, {
+              x: startX * 0.6,
+              y: -70,
+              scale: 0.9,
+              opacity: 0.35,
+              duration: 1,
+              ease: 'power2.in'
+            });
+
+          // Subtle mouse 3D tilt on chapter cards
+          card.addEventListener('mousemove', function (e) {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            gsap.to(card, {
+              rotationY: x * 0.012,
+              rotationX: -y * 0.012,
+              duration: 0.5,
+              ease: 'power1.out'
+            });
+          });
+
+          card.addEventListener('mouseleave', function () {
+            gsap.to(card, {
+              rotationY: 0,
+              rotationX: 0,
+              duration: 0.8,
+              ease: 'power2.out'
+            });
+          });
+        });
+
+        // 3b. Act 04 (5 Chapters) "The Director's Narrative" Scale-Up (Down) & Scale-Down (Up)
+        const chaptersHeader = document.querySelector('.chapters-header-block');
+        if (chaptersHeader) {
+          gsap.fromTo(chaptersHeader,
+            { scale: 0.65, y: 70, opacity: 0, transformOrigin: 'center center' },
+            {
+              scale: 1,
+              y: 0,
+              opacity: 1,
+              ease: 'none',
+              scrollTrigger: {
+                trigger: chaptersHeader,
+                start: 'top 88%',
+                end: 'top 45%',
+                scrub: 1.2
+              }
+            }
+          );
+        }
+
+        // 4. Act 05 (The Vault) Perfect 2-Way Scroll-Scrubbed Assemble (Down) & Disassemble (Up)
+        const vaultSection = document.getElementById('vault');
+        if (vaultSection) {
+          // Background "WORKS" Title: Slow scaling and parallax rise
+          gsap.fromTo('.vault-pinned-title',
+            { scale: 0.75, y: 80, opacity: 0 },
+            {
+              scale: 1,
+              y: 0,
+              opacity: 0.045,
+              ease: 'none',
+              scrollTrigger: {
+                trigger: vaultSection,
+                start: 'top 88%',
+                end: 'top 35%',
+                scrub: 1.2
+              }
+            }
+          );
+
+          // Header Title: Grows from small to big (Scale 0.65 -> 1) right in front of user
+          gsap.fromTo('.vault-title-block',
+            { scale: 0.65, y: 50, opacity: 0, transformOrigin: 'left center' },
+            {
+              scale: 1,
+              y: 0,
+              opacity: 1,
+              ease: 'none',
+              scrollTrigger: {
+                trigger: '.vault-header-row',
+                start: 'top 88%',
+                end: 'top 45%',
+                scrub: 1.2
+              }
+            }
+          );
+
+          // Follow On Instagram Button: Grows from small to big (Scale 0.65 -> 1)
+          gsap.fromTo('.vault-insta-btn',
+            { scale: 0.65, y: 40, opacity: 0, transformOrigin: 'right center' },
+            {
+              scale: 1,
+              y: 0,
+              opacity: 1,
+              ease: 'none',
+              scrollTrigger: {
+                trigger: '.vault-header-row',
+                start: 'top 88%',
+                end: 'top 45%',
+                scrub: 1.2
+              }
+            }
+          );
+
+          // Row 1: Refined subtle sweep - Left Card (x: -90px), Right Card (x: +90px) + Scale (0.90)
+          const row1Left = document.querySelectorAll('.vault-card-left')[0];
+          const row1Right = document.querySelectorAll('.vault-card-right')[0];
+          if (row1Left && row1Right) {
+            gsap.fromTo(row1Left,
+              { x: -90, y: 40, scale: 0.90, opacity: 0.2 },
+              {
+                x: 0,
+                y: 0,
+                scale: 1,
+                opacity: 1,
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: row1Left,
+                  start: 'top 80%',
+                  end: 'center 52%',
+                  scrub: 0.9
+                }
+              }
+            );
+
+            gsap.fromTo(row1Right,
+              { x: 90, y: 40, scale: 0.90, opacity: 0.2 },
+              {
+                x: 0,
+                y: 0,
+                scale: 1,
+                opacity: 1,
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: row1Right,
+                  start: 'top 80%',
+                  end: 'center 52%',
+                  scrub: 0.9
+                }
+              }
+            );
+          }
+
+          // Row 2: Refined subtle sweep - Left Card (x: -90px), Right Card (x: +90px) + Scale (0.90)
+          const row2Left = document.querySelectorAll('.vault-card-left')[1];
+          const row2Right = document.querySelectorAll('.vault-card-right')[1];
+          if (row2Left && row2Right) {
+            gsap.fromTo(row2Left,
+              { x: -90, y: 40, scale: 0.90, opacity: 0.2 },
+              {
+                x: 0,
+                y: 0,
+                scale: 1,
+                opacity: 1,
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: row2Left,
+                  start: 'top 80%',
+                  end: 'center 52%',
+                  scrub: 0.9
+                }
+              }
+            );
+
+            gsap.fromTo(row2Right,
+              { x: 90, y: 40, scale: 0.90, opacity: 0.2 },
+              {
+                x: 0,
+                y: 0,
+                scale: 1,
+                opacity: 1,
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: row2Right,
+                  start: 'top 80%',
+                  end: 'center 52%',
+                  scrub: 0.9
+                }
+              }
+            );
+          }
+
+          // Ensure Vault videos play reliably
+          document.querySelectorAll('.case-thumb-video').forEach(v => {
+            v.muted = true;
+            v.play().catch(() => { });
+          });
+        }
+
+        // 5. Act 06 (Blueprint) Staggered 1-by-1 Wave Assemble (Down) & Disassemble (Up)
+        const blueprintWrapper = document.querySelector('.blueprint-timeline-wrapper');
+        if (blueprintWrapper) {
+          const stepCards = document.querySelectorAll('.blueprint-step-card');
+
+          // 1. Heading: Scales up from small and slides down smoothly
+          gsap.fromTo('.blueprint-header-row',
+            { y: -60, scale: 0.85, opacity: 0 },
+            {
+              y: 0,
+              scale: 1,
+              opacity: 1,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: '.blueprint-header-row',
+                start: 'top 90%',
+                end: 'top 50%',
+                scrub: 0.85
+              }
+            }
+          );
+
+          // 2. 4 Process Step Boxes: Enter 1-by-1 (01 -> 02 -> 03 -> 04) on Scroll Down, Disassemble (04 -> 03 -> 02 -> 01) on Scroll Up
+          const cardsTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: blueprintWrapper,
+              start: 'top 92%',    // Starts when cards container enters bottom of screen
+              end: 'top 42%',      // Finishes when cards reach center of screen
+              scrub: 0.85
+            }
+          });
+
+          stepCards.forEach((card, i) => {
+            cardsTl.fromTo(card,
+              {
+                y: 130,
+                scale: 0.6,
+                opacity: 0,
+                transformOrigin: 'center center'
+              },
+              {
+                y: 0,
+                scale: 1,
+                opacity: 1,
+                duration: 1,
+                ease: 'none'
+              },
+              i * 0.35 // 0.0s (Box 01), 0.35s (Box 02), 0.70s (Box 03), 1.05s (Box 04)
+            );
+          });
+        }
+
+        // 6. Act 07 (Initiate / Contact) Left Text & Right Form Smooth Converge (Down) & Disperse (Up) (Real-Time 2-Way Scrub)
+        const initiateSection = document.getElementById('initiate');
+        if (initiateSection) {
+          const initTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: '#initiate',
+              start: 'top 88%',
+              end: 'top 30%',
+              scrub: 0.8
+            }
+          });
+
+          // Left Column ("Let's build something bold together" & Contact details) from LEFT
+          initTl.fromTo('.initiate-left-col',
+            { x: -160, scale: 0.85, opacity: 0 },
+            {
+              x: 0,
+              scale: 1,
+              opacity: 1,
+              duration: 1,
+              ease: 'none'
+            },
+            0
+          );
+
+          // Right Column (Inquiry Form Glass Card) from RIGHT
+          initTl.fromTo('.initiate-right-col',
+            { x: 160, scale: 0.85, opacity: 0 },
+            {
+              x: 0,
+              scale: 1,
+              opacity: 1,
+              duration: 1,
+              ease: 'none'
+            },
+            0.1
+          );
+
+          // WhatsApp Quick Chat Button Pop-in (Scale from small to big)
+          initTl.fromTo('.initiate-left-col .btn-green-wipe',
+            { scale: 0.6, opacity: 0 },
+            {
+              scale: 1,
+              opacity: 1,
+              duration: 0.7,
+              ease: 'none'
+            },
+            0.3
+          );
+        }
+
+        // =========================================================================
+        // TRUE 3D CYLINDRICAL ORBIT CAROUSEL ENGINE (360° Continuous Circle + Card Pickup)
+        // =========================================================================
+        const stage3d = document.getElementById('skills3dStage');
+        const orbitRing = document.getElementById('skills3dOrbitRing');
+        const orbitItems = Array.from(document.querySelectorAll('.skills-3d-orbit-item'));
+
+        if (stage3d && orbitRing && orbitItems.length > 0) {
+          const totalItems = orbitItems.length; // 10 items
+          const angleStep = 360 / totalItems; // 36 degrees per item
+
+          let currentAngle = 0;
+          let autoSpeed = -0.22; // Clockwise loop: back-right -> front-center -> back-left -> back-right
+          let targetVelocity = 0;
+          let currentVelocity = 0;
+          let isDraggingStage = false;
+          let isHovered = false;
+          let stageStartX = 0;
+          let lastPointerX = 0;
+          let lastPointerTime = 0;
+
+          // Per-item state for direct card drag & spring-back
+          const itemStates = orbitItems.map((el, i) => {
+            const card = el.querySelector('.skill-3d-card');
+            return {
+              el,
+              card,
+              baseAngle: i * angleStep,
+              dragX: 0,
+              dragY: 0,
+              dragZ: 0,
+              tiltX: 0,
+              tiltY: 0,
+              glareX: 50,
+              glareY: 50,
+              isDragged: false,
+              isHovered: false
+            };
+          });
+
+          // Calculate responsive orbit radius (optimized for 10 frames with seamless spacing)
+          function getRadius() {
+            const w = window.innerWidth;
+            if (w < 600) return 320;
+            if (w < 992) return 410;
+            if (w < 1400) return 490;
+            return 540;
+          }
+
+          // Ensure all videos play continuously with high fidelity
+          const stageVideos = stage3d.querySelectorAll('.skill-card-video');
+          stageVideos.forEach((vid) => {
+            vid.muted = true;
+            vid.playsInline = true;
+            const playPromise = vid.play();
+            if (playPromise !== undefined) {
+              playPromise.catch(() => { });
+            }
+          });
+
+          // Main 3D render loop
+          function update3DOrbit() {
+            const R = getRadius();
+
+            if (!isDraggingStage && !isHovered) {
+              currentAngle += autoSpeed + currentVelocity;
+            } else if (isHovered && !isDraggingStage) {
+              currentAngle += (autoSpeed * 0.25) + currentVelocity;
+            } else if (isDraggingStage) {
+              currentAngle += currentVelocity;
+            }
+
+            // Inertia decay
+            currentVelocity *= 0.94;
+
+            itemStates.forEach((state, i) => {
+              const totalAngle = state.baseAngle + currentAngle;
+              const rad = (totalAngle * Math.PI) / 180;
+
+              // 3D Cylinder polar coordinates
+              let x = Math.sin(rad) * R;
+              let z = Math.cos(rad) * R;
+              let y = 0;
+
+              // Depth metrics (z ranges from -R to +R)
+              const zNorm = (z + R) / (2 * R); // 0 (deep back) to 1 (front center)
+
+              // Scale: 0.72 in back to 1.00 at front center (prevents upscaling blur for crisp video)
+              const scale = 0.72 + (zNorm * 0.28);
+
+              // Opacity: 0.40 in back to 1.0 in front
+              const opacity = 0.40 + (zNorm * 0.60);
+
+              // Tangent rotation: smoothly faces camera with subtle perspective curve
+              const rotateY = -(x / R) * 12;
+
+              // Add active card drag displacement if being pulled by user
+              x += state.dragX;
+              y += state.dragY;
+              z += state.dragZ;
+
+              // Z-index layering so front cards are always in front of back cards
+              const zIndex = Math.round(zNorm * 2000) + (state.isDragged ? 5000 : 0);
+
+              // Apply 3D transform
+              state.el.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, ${z.toFixed(2)}px) scale(${scale.toFixed(3)}) rotateY(${rotateY.toFixed(2)}deg)`;
+              state.el.style.opacity = state.isDragged ? 1 : opacity.toFixed(3);
+              state.el.style.zIndex = zIndex;
+
+              // Apply micro-tilt on card if available
+              if (state.card) {
+                state.card.style.transform = `rotateX(${state.tiltX.toFixed(2)}deg) rotateY(${state.tiltY.toFixed(2)}deg)`;
+              }
+            });
+
+            requestAnimationFrame(update3DOrbit);
+          }
+
+          requestAnimationFrame(update3DOrbit);
+
+          // ==========================================
+          // INTERACTION: STAGE DRAG & TOSS ROTATION
+          // ==========================================
+          stage3d.addEventListener('pointerdown', (e) => {
+            if (e.target.closest('.skill-3d-card')) return; // Card handler takes priority
+            if (e.pointerType === 'mouse' && e.button !== 0) return;
+
+            isDraggingStage = true;
+            stageStartX = e.clientX;
+            lastPointerX = e.clientX;
+            lastPointerTime = performance.now();
+            stage3d.classList.add('is-dragging');
+          });
+
+          window.addEventListener('pointermove', (e) => {
+            if (isDraggingStage) {
+              const now = performance.now();
+              const deltaX = e.clientX - lastPointerX;
+              const dt = Math.max(now - lastPointerTime, 1);
+
+              currentAngle += deltaX * 0.26;
+              currentVelocity = (deltaX / dt) * 8.0;
+
+              lastPointerX = e.clientX;
+              lastPointerTime = now;
+            }
+          });
+
+          const onPointerUp = () => {
+            if (isDraggingStage) {
+              isDraggingStage = false;
+              stage3d.classList.remove('is-dragging');
+            }
+          };
+
+          window.addEventListener('pointerup', onPointerUp);
+          window.addEventListener('pointercancel', onPointerUp);
+
+          // ==========================================
+          // INTERACTION: CARD PICKUP, PULL & SPRING-BACK
+          // ==========================================
+          itemStates.forEach((state) => {
+            if (!state.card) return;
+
+            let cardDragStart = { x: 0, y: 0 };
+            let isCardPressed = false;
+
+            state.card.addEventListener('pointerdown', (e) => {
+              if (e.pointerType === 'mouse' && e.button !== 0) return;
+              e.stopPropagation();
+
+              isCardPressed = true;
+              state.isDragged = true;
+              state.card.classList.add('is-card-dragged');
+              cardDragStart = { x: e.clientX, y: e.clientY };
+
+              const onCardMove = (moveEvt) => {
+                if (!isCardPressed) return;
+                const dx = moveEvt.clientX - cardDragStart.x;
+                const dy = moveEvt.clientY - cardDragStart.y;
+
+                // Pull card dynamically with cursor
+                state.dragX = dx * 1.1;
+                state.dragY = dy * 1.1;
+                state.dragZ = 80; // Pull forward towards user
+
+                state.tiltX = -dy * 0.08;
+                state.tiltY = dx * 0.08;
+              };
+
+              const onCardUp = () => {
+                if (!isCardPressed) return;
+                isCardPressed = false;
+                window.removeEventListener('pointermove', onCardMove);
+                window.removeEventListener('pointerup', onCardUp);
+                window.removeEventListener('pointercancel', onCardUp);
+
+                state.card.classList.remove('is-card-dragged');
+
+                // Smooth Elastic Spring-Back into 3D Orbit Position
+                gsap.to(state, {
+                  dragX: 0,
+                  dragY: 0,
+                  dragZ: 0,
+                  tiltX: 0,
+                  tiltY: 0,
+                  duration: 0.75,
+                  ease: 'elastic.out(1.1, 0.55)',
+                  onComplete: () => {
+                    state.isDragged = false;
+                  }
+                });
+              };
+
+              window.addEventListener('pointermove', onCardMove);
+              window.addEventListener('pointerup', onCardUp);
+              window.addEventListener('pointercancel', onCardUp);
+            });
+
+            // Card Hover & Glare Parallax
+            state.card.addEventListener('mouseenter', () => {
+              isHovered = true;
+              state.isHovered = true;
+            });
+
+            state.card.addEventListener('mousemove', (e) => {
+              if (state.isDragged) return;
+              const rect = state.card.getBoundingClientRect();
+              const x = (e.clientX - rect.left) / rect.width - 0.5;
+              const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+              state.tiltX = -y * 14;
+              state.tiltY = x * 16;
+              state.glareX = (x + 0.5) * 100;
+              state.glareY = (y + 0.5) * 100;
+            });
+
+            state.card.addEventListener('mouseleave', () => {
+              isHovered = false;
+              state.isHovered = false;
+              if (!state.isDragged) {
+                state.tiltX = 0;
+                state.tiltY = 0;
+                state.glareX = 50;
+                state.glareY = 50;
+              }
+            });
+          });
+        }
+
+        // 4. Update Story Progress HUD Active State on Scroll
+        const sections = document.querySelectorAll('section[id], footer[id], header[id]');
+        const hudDots = document.querySelectorAll('.story-dot-item');
+
+        window.addEventListener('scroll', function () {
+          let current = '';
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= sectionTop - 300) {
+              current = section.getAttribute('id');
+            }
+          });
+
+          hudDots.forEach(dot => {
+            dot.classList.remove('active');
+            if (dot.getAttribute('data-target') === current) {
+              dot.classList.add('active');
+            }
+          });
+        });
+
+        // 5. Page 7 Creative Discipline Selector & Laser Transition System
+        const styleChips = document.querySelectorAll('#page7StyleChips .kairon-tool-chip');
+        styleChips.forEach(chip => {
+          chip.addEventListener('click', function () {
+            this.classList.toggle('is-active');
+          });
+        });
+
+        function triggerLaserTransition(targetUrl) {
+          const overlay = document.getElementById('transmission-laser-overlay');
+          if (overlay) {
+            overlay.classList.add('is-active');
+            setTimeout(() => {
+              window.location.href = targetUrl;
+            }, 650);
+          } else {
+            window.location.href = targetUrl;
+          }
+        }
+
+        const btnTransmit = document.getElementById('btnPage7Transmit');
+        if (btnTransmit) {
+          btnTransmit.addEventListener('click', function () {
+            const activeStyles = Array.from(document.querySelectorAll('#page7StyleChips .kairon-tool-chip.is-active'))
+              .map(c => c.getAttribute('data-val') || c.innerText.trim());
+
+            const briefData = {
+              styles: activeStyles.length > 0 ? activeStyles : ['2D Animation & Motion']
+            };
+
+            try {
+              sessionStorage.setItem('kairon_brief', JSON.stringify(briefData));
+            } catch (e) { }
+
+            const queryParams = new URLSearchParams({
+              styles: briefData.styles.join('; ')
+            });
+
+            triggerLaserTransition('lets-talk.html?' + queryParams.toString());
+          });
+        }
+
+        // 6. Interactive 3D Peeking Mascot Micro-Interaction Engine
+        const mascotHeadWrapper = document.getElementById('peekingMascotHead');
+        const mascotHandsWrapper = document.getElementById('peekingMascotHands');
+        const initiateCol = document.querySelector('.initiate-right-col');
+        const mascotHeadGroup = document.getElementById('mascotHeadGroup');
+        const mascotHead = document.getElementById('mascotHead');
+        const mascotHandL = document.getElementById('mascotHandL');
+        const mascotHandR = document.getElementById('mascotHandR');
+        const pupilL = document.getElementById('mascotPupilL');
+        const pupilR = document.getElementById('mascotPupilR');
+        const eyeL = document.getElementById('mascotEyeL');
+        const eyeR = document.getElementById('mascotEyeR');
+        const browL = document.getElementById('mascotBrowL');
+        const browR = document.getElementById('mascotBrowR');
+
+        if (mascotHeadWrapper && initiateCol && mascotHeadGroup) {
+          let isMascotVisible = false;
+          let blinkInterval = null;
+
+          // Initial tucked-away state behind card
+          gsap.set(mascotHeadGroup, { y: 95, opacity: 0, transformOrigin: 'center bottom' });
+          gsap.set([mascotHandL, mascotHandR], { y: 25, opacity: 0, transformOrigin: 'center bottom' });
+          gsap.set([eyeL, eyeR], { transformOrigin: '50% 50%' });
+          gsap.set([browL, browR], { transformOrigin: '50% 50%' });
+
+          function showMascot() {
+            if (isMascotVisible) return;
+            isMascotVisible = true;
+
+            // Hands grip over top border
+            gsap.to([mascotHandL, mascotHandR], {
+              y: 0,
+              opacity: 1,
+              duration: 0.38,
+              ease: 'back.out(2.4)',
+              overwrite: 'auto'
+            });
+
+            // Head peeks up from behind the card
+            gsap.to(mascotHeadGroup, {
+              y: 0,
+              opacity: 1,
+              duration: 0.55,
+              delay: 0.05,
+              ease: 'back.out(1.8)',
+              overwrite: 'auto'
+            });
+
+            startBlinking();
+          }
+
+          function hideMascot() {
+            if (!isMascotVisible) return;
+            isMascotVisible = false;
+            stopBlinking();
+
+            // Head ducks smoothly down behind card
+            gsap.to(mascotHeadGroup, {
+              y: 95,
+              opacity: 0,
+              duration: 0.45,
+              ease: 'power2.in',
+              overwrite: 'auto'
+            });
+
+            // Hands release ledge
+            gsap.to([mascotHandL, mascotHandR], {
+              y: 25,
+              opacity: 0,
+              duration: 0.35,
+              delay: 0.06,
+              ease: 'power2.in',
+              overwrite: 'auto'
+            });
+
+            // Reset pupils & brows
+            gsap.to([pupilL, pupilR], { x: 0, y: 0, duration: 0.3 });
+            gsap.to([browL, browR], { x: 0, y: 0, rotation: 0, duration: 0.3 });
+          }
+
+          function startBlinking() {
+            stopBlinking();
+            blinkInterval = setInterval(() => {
+              if (!isMascotVisible) return;
+              gsap.timeline()
+                .to([eyeL, eyeR], { scaleY: 0.08, duration: 0.08, ease: 'power2.inOut' })
+                .to([browL, browR], { y: 2, duration: 0.08, ease: 'power2.inOut' }, '<')
+                .to([eyeL, eyeR], { scaleY: 1, duration: 0.1, ease: 'power2.out' })
+                .to([browL, browR], { y: 0, duration: 0.1, ease: 'power2.out' }, '<');
+            }, 3500);
+          }
+
+          function stopBlinking() {
+            if (blinkInterval) clearInterval(blinkInterval);
+          }
+
+          // Mouse Enter / Leave on terminal column (Strictly Hover Triggered Only)
+          initiateCol.addEventListener('mouseenter', showMascot);
+          initiateCol.addEventListener('mouseleave', hideMascot);
+
+          // Real-time Pupil & Eyebrow Mouse Tracking
+          initiateCol.addEventListener('mousemove', (e) => {
+            if (!isMascotVisible) return;
+
+            const rect = mascotHeadWrapper.getBoundingClientRect();
+            const eyeCenterX = rect.left + rect.width / 2;
+            const eyeCenterY = rect.top + 50;
+
+            const mouseDeltaX = e.clientX - eyeCenterX;
+            const mouseDeltaY = e.clientY - eyeCenterY;
+
+            // Clamped offset
+            const maxTrackX = 11;
+            const maxTrackY = 9;
+            const trackX = Math.max(-maxTrackX, Math.min(maxTrackX, mouseDeltaX * 0.028));
+            const trackY = Math.max(-maxTrackY, Math.min(maxTrackY, mouseDeltaY * 0.024));
+
+            gsap.to([pupilL, pupilR], {
+              x: trackX,
+              y: trackY,
+              duration: 0.12,
+              ease: 'power1.out',
+              overwrite: 'auto'
+            });
+
+            // Dynamic Eyebrow tracking and tilt
+            gsap.to(browL, {
+              y: trackY * 0.45,
+              rotation: -trackX * 0.6,
+              duration: 0.15,
+              ease: 'power1.out',
+              overwrite: 'auto'
+            });
+            gsap.to(browR, {
+              y: trackY * 0.45,
+              rotation: trackX * 0.6,
+              duration: 0.15,
+              ease: 'power1.out',
+              overwrite: 'auto'
+            });
+
+            // Subtle head lean
+            gsap.to(mascotHead, {
+              x: trackX * 0.35,
+              rotation: trackX * 0.25,
+              duration: 0.25,
+              ease: 'power1.out',
+              overwrite: 'auto'
+            });
+          });
+
+          // Interactive Chip Click Reaction (Happy Hop, Eyebrow Bounce & Wink)
+          styleChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+              if (!isMascotVisible) showMascot();
+
+              // Happy bounce timeline
+              gsap.timeline()
+                .to(mascotHeadGroup, { y: -14, duration: 0.16, ease: 'power2.out' })
+                .to(mascotHeadGroup, { y: 0, duration: 0.32, ease: 'bounce.out' });
+
+              // Eyebrows raise happily
+              gsap.timeline()
+                .to([browL, browR], { y: -9, scale: 1.15, duration: 0.18, ease: 'power2.out' })
+                .to([browL, browR], { y: 0, scale: 1, duration: 0.25, ease: 'power2.inOut' });
+
+              // Playful Left Eye Wink / Right Eye Pop
+              gsap.timeline()
+                .to(eyeL, { scaleY: 0.1, duration: 0.09, ease: 'power2.inOut' })
+                .to(eyeL, { scaleY: 1, duration: 0.12, ease: 'back.out(2)' });
+
+              gsap.timeline()
+                .to(eyeR, { scale: 1.2, duration: 0.14, ease: 'back.out(2)' })
+                .to(eyeR, { scale: 1, duration: 0.2, ease: 'power2.out' });
+            });
+          });
+
+          // Hover on Mega CTA Button (Eyes look down eagerly)
+          if (btnTransmit) {
+            btnTransmit.addEventListener('mouseenter', () => {
+              if (!isMascotVisible) showMascot();
+              gsap.to([pupilL, pupilR], { y: 9, x: 0, duration: 0.2, ease: 'power2.out', overwrite: 'auto' });
+              gsap.to([eyeL, eyeR], { scale: 1.15, duration: 0.22, ease: 'back.out(1.8)', overwrite: 'auto' });
+              gsap.to([browL, browR], { y: -9, duration: 0.22, overwrite: 'auto' });
+            });
+
+            btnTransmit.addEventListener('mouseleave', () => {
+              gsap.to([eyeL, eyeR], { scale: 1, duration: 0.2, ease: 'power2.out', overwrite: 'auto' });
+              gsap.to([browL, browR], { y: 0, duration: 0.2, overwrite: 'auto' });
+            });
+          }
+        }
+
+        // Also trigger laser transition on header/offcanvas LET'S TALK links
+        document.querySelectorAll('.lets-talk-trigger-link').forEach(link => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const href = this.getAttribute('href') || 'lets-talk.html';
+            triggerLaserTransition(href);
+          });
+        });
+      }
+    });
+  </script>
+
+  <!-- Cinematic Transmission Laser Flash Overlay -->
+  <div id="transmission-laser-overlay" class="transmission-laser-overlay">
+    <div class="laser-beam"></div>
+    <div class="laser-content">
+      <div class="laser-spinner"></div>
+      <div class="laser-title">TRANSMITTING CREATIVE BRIEF</div>
+      <div class="laser-subtitle">ESTABLISHING DIRECT STUDIO CONNECTION // K LABS 2026</div>
+    </div>
+  </div>
+</body>
+
+</html>

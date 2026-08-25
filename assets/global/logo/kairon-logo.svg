@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <defs>
+    <!-- Cyber Emerald Gradient -->
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676" />
+      <stop offset="50%" stop-color="#00B85A" />
+      <stop offset="100%" stop-color="#008742" />
+    </linearGradient>
+
+    <!-- Chrome Edge Shimmer -->
+    <linearGradient id="chromeEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#00E676" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00B85A" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Subtle Glow Shadow -->
+    <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00B85A" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- ==================== ICON: Dynamic Cyber-Kinetic "K" ==================== -->
+  <g transform="translate(2, 4)" filter="url(#logoGlow)">
+    <!-- Sleek Obsidian Squircle Backplate -->
+    <rect x="0" y="0" width="40" height="40" rx="10" fill="#090D16" stroke="url(#neonGreen)" stroke-width="1.8" />
+
+    <!-- Isometric Precision Cut Left Pillar of K -->
+    <path d="M11 9 L17 9 L17 31 L11 31 Z" fill="url(#neonGreen)" />
+
+    <!-- Upper Aerodynamic Slash Blade -->
+    <path d="M29 9 L21 19 L17 19 L23 9 Z" fill="#FFFFFF" />
+
+    <!-- Lower Dynamic Kinetic Blade -->
+    <path d="M19 21 L29 31 L22 31 L14 21 Z" fill="url(#neonGreen)" />
+
+    <!-- High-Tech Core Dot -->
+    <circle cx="18" cy="20" r="1.6" fill="#00E676" />
+  </g>
+
+  <!-- ==================== TYPOGRAPHY: LABS Wordmark ==================== -->
+  <g transform="translate(52, 0)">
+    <!-- Main Studio Wordmark "LABS" -->
+    <text x="0" y="27" font-family="'Syne', 'Space Grotesk', 'Plus Jakarta Sans', -apple-system, sans-serif" font-size="22" font-weight="900" letter-spacing="3.5" fill="#090D16">LABS</text>
+
+    <!-- Clean, High-Legibility Tagline (Crisp & Readable) -->
+    <text x="1" y="39" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="8.5" font-weight="700" letter-spacing="2.8" fill="#008742">MOTION &amp; VFX</text>
+  </g>
+</svg>
